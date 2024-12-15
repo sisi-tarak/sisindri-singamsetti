@@ -62,6 +62,7 @@ const Navbar = () => {
             <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
               <Box
                 component="span"
+                className="text-headColor"
                 sx={{ fontWeight: "bold", fontSize: "1.2rem" }}
               >
                 Sisindri Singamsetti
@@ -74,9 +75,9 @@ const Navbar = () => {
               {navItems.map((item) => (
                 <Button
                   key={item.id}
-                  color="inherit"
                   onClick={() => handleNavigation(item.path)}
                   sx={{
+                    color: "#c4c4c4",
                     mx: 1,
                     textTransform: "capitalize",
                     "&:hover": {
@@ -98,7 +99,9 @@ const Navbar = () => {
             </Box>
           ) : (
             <IconButton
-              color="inherit"
+              sx={{
+                color: "#ffffff",
+              }}
               aria-label="open drawer"
               edge="end"
               onClick={handleDrawerToggle}
