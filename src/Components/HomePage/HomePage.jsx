@@ -1,14 +1,13 @@
-import { Container } from "@mui/material";
 import React from "react";
 import TimelineSection from "../TimelineSection/TimelineSection";
-import About from "../About/About";
+import UpSideCover from "../UpSideCover/UpSideCover";
 
 const HomePage = () => {
   return (
-    <Container maxWidth="lg">
-      <About />
+    <>
+      <UpSideCover />
       <TimelineSection />
-    </Container>
+    </>
   );
 };
 

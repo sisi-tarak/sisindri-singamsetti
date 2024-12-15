@@ -13,6 +13,7 @@ import {
   useMediaQuery,
   useTheme,
   Container,
+  styled,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useNavigate } from "react-router-dom";
@@ -24,9 +25,9 @@ const Navbar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const navItems = [
-    { id: 1, text: "Doc", path: "/documentation" },
-    { id: 2, text: "Tutorials", path: "/tutorials" },
-    { id: 3, text: "Courses", path: "/courses" },
+    { id: 1, text: "Work", path: "/" },
+    { id: 2, text: "About", path: "/about" },
+    { id: 3, text: "Resume", path: "/resume" },
   ];
 
   const handleDrawerToggle = () => {
@@ -71,15 +72,16 @@ const Navbar = () => {
           </Box>
 
           {!isMobile ? (
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+            <div className="flex items-center text-textColor">
               {navItems.map((item) => (
                 <Button
                   key={item.id}
                   onClick={() => handleNavigation(item.path)}
                   sx={{
-                    color: "#c4c4c4",
-                    mx: 1,
+                    color: "#fafafa",
                     textTransform: "capitalize",
+                    mx: "8px",
+                    letterSpacing: "1px",
                     "&:hover": {
                       backgroundColor: "rgba(0,0,0,0.05)",
                     },
@@ -88,15 +90,7 @@ const Navbar = () => {
                   {item.text}
                 </Button>
               ))}
-              <Button
-                variant="outlined"
-                color="secondary"
-                onClick={() => handleNavigation("/contact")}
-                sx={{ ml: 2 }}
-              >
-                Let's Talk
-              </Button>
-            </Box>
+            </div>
           ) : (
             <IconButton
               sx={{

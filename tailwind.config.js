@@ -13,9 +13,12 @@ export default {
     },
     extend: {
       colors: {
-        backgroundColor: "#121212",
+        backgroundColor: "#050505",
         headColor: "#ffffff",
-        textColor: "#c4c4c4",
+        textColor: "#fafafa",
+        secondaryTextColor: "#939b9f",
+        headStrong: "#EA88FB",
+        textStrong: "#E6A6FD",
         buttonBgColor: "#9c27b0",
         buttonBorder: "rgba(156, 39, 176, 0.5)",
         buttonTextColor: "#9c27b0",
@@ -25,6 +28,10 @@ export default {
         iconColor: "#c4c2ff",
         iconBgColor: "#5956e8",
         footerBgColor: "#292930",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "regular"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
