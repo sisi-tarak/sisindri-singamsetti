@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar, Box, Container, Typography } from "@mui/material";
-import img1 from "../../assets/img1.png";
+import img1 from "../../assets/img3.png";
 const About = () => {
   return (
     <Container maxWidth="lg" className="mt-8 mb-24 ">
@@ -8,8 +8,8 @@ const About = () => {
         About Me
       </h1>
       <Box className="flex justify-center">
-        <Box className="flex flex-col justify-center align-center">
-          <img alt="Remy Sharp" src={img1} className="w-[550px]" />
+        <Box className="flex flex-col justify-center align-center w-[550px]">
+          <img alt="Remy Sharp" src={img1} className="w-full h-auto" />
         </Box>
         <Box className="flex flex-col justify-center mt-8 w-[650px] px-8">
           <p className="text-textColor font-normal text-base font-Montserrat">
