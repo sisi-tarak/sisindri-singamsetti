@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Components/HomePage/HomePage";
@@ -8,6 +8,8 @@ import HomePage from "./Components/HomePage/HomePage";
 // import Tutorials from "./Components/Tutorials/Tutorials";
 import About from "./Components/About/About";
 import Resume from "./Components/Resume/Resume";
+import DownSide from "./Components/DownSide/DownSide";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -18,7 +20,9 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/downside" element={<DownSide />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

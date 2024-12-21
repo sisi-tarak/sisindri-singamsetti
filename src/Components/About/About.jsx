@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Box, Container, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import img1 from "../../assets/img3.png";
 const About = () => {
   return (

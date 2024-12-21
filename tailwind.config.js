@@ -27,7 +27,8 @@ export default {
         navlinkActiveColor: "#5A56E8",
         iconColor: "#c4c2ff",
         iconBgColor: "#5956e8",
-        footerBgColor: "#292930",
+        footerBgColor: "#191919",
+        strongBgColor: "#292930",
       },
       fontFamily: {
         poppins: ["Poppins", "regular"],

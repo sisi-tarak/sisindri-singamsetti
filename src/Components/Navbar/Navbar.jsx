@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -11,9 +11,8 @@ import {
   ListItemText,
   IconButton,
   useMediaQuery,
-  useTheme,
+  createTheme,
   Container,
-  styled,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useNavigate } from "react-router-dom";
@@ -21,8 +20,23 @@ import { Link, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navigate = useNavigate();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        "2xs": 0,
+        xs: 425,
+        sm: 640,
+        md: 768,
+        lg: 1024,
+        xl: 1280,
+        "2xl": 1536,
+      },
+    },
+  });
+
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   const navItems = [
     { id: 1, text: "Work", path: "/" },
@@ -38,6 +52,22 @@ const Navbar = () => {
     navigate(path);
     if (isMobile) handleDrawerToggle();
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const drawer = (
     <List>
