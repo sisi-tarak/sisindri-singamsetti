@@ -16,10 +16,10 @@ const DownSideLink = () => {
         onClick={handleDownSideLink}
       >
         <h1 className="text-headStrong text-center tracking-wide text-5xl font-bold uppercase mx-auto mt-1">
-          <div className="rotate-180">DOWN SIDE</div>
-          <span className="text-headColor leading-normal">UP SIDE</span>
+          <div className="rotate-180">DOWN</div>
+          <span className="text-headColor leading-normal">UPSIDE</span>
         </h1>
-        <p className="text-secondaryTextColor text-base tracking-widest mt-3">
+        <p className="text-secondaryTextColor text-sm tracking-widest mt-3">
           Click here to go to <span className="text-textStrong">Down Side</span>
         </p>
       </div>
