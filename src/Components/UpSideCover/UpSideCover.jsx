@@ -3,7 +3,7 @@ import React from "react";
 
 const UpSideCover = () => {
   return (
-    <Container maxWidth="lg" className="h-screen">
+    <Container maxWidth="lg" className="mb-44">
       <Box className="m-20 p-20">
         <Box>
           <h1 className="text-headStrong text-[53px] font-bold capitalize tracking-wide leading-tight">
