@@ -3,7 +3,7 @@ import { Box, Container } from "@mui/material";
 import img1 from "../../assets/img3.png";
 const About = () => {
   return (
-    <Container maxWidth="lg" className="mt-8 mb-24 ">
+    <Container maxWidth="lg" className="mt-8 mb-32 ">
       <h1 className="text-headColor text-center tracking-wide text-5xl font-semibold uppercase mb-4 mx-auto mt-10 pt-10">
         About Me
       </h1>

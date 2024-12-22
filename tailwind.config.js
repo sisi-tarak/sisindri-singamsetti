@@ -19,6 +19,7 @@ export default {
         secondaryTextColor: "#939b9f",
         headStrong: "#EA88FB",
         textStrong: "#E6A6FD",
+        buttonHoverBorder: "#694976",
         buttonBgColor: "#9c27b0",
         buttonBorder: "rgba(156, 39, 176, 0.5)",
         buttonTextColor: "#9c27b0",
