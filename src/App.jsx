@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Components/HomePage/HomePage";
@@ -10,9 +10,18 @@ import About from "./Components/About/About";
 import Resume from "./Components/Resume/Resume";
 import DownSide from "./Components/DownSide/DownSide";
 import Footer from "./Components/Footer/Footer";
+import Spinner from "./Components/Spinner/Spinner";
 
 const App = () => {
-  return (
+  const [isLoading, setIsLoading] = useState(true);
+
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 3000);
+
+  return isLoading ? (
+    <Spinner />
+  ) : (
     <Router>
       <Navbar />
       <Routes>
