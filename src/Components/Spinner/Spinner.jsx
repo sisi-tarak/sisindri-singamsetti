@@ -42,8 +42,8 @@ const Spinner = () => {
           />
         </svg>
         <div className="w-full font-Montserrat text-base font-bold text-headColor transform translate-x-[.4rem] mt-[1.5rem] tracking-widest">
-          Loading.
-          <span className="text-headStrong">.</span>.
+          <span className="text-headStrong">Sisindri </span>
+          <span className="animate-pulse">Singamsetti</span>
         </div>
       </div>
     </div>
