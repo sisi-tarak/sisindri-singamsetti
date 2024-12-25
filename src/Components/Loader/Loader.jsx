@@ -1,6 +1,6 @@
 import React from "react";
 
-const Spinner = () => {
+const Loader = () => {
   return (
     <div className="w-full h-screen z-10 fixed top-0 left-0 bg-backgroundColor flex justify-center items-center">
       <div className="svg-wrapper">
@@ -50,4 +50,4 @@ const Spinner = () => {
   );
 };
 
-export default Spinner;
+export default Loader;

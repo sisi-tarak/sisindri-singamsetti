@@ -10,7 +10,7 @@ import About from "./Components/About/About";
 import Resume from "./Components/Resume/Resume";
 import DownSide from "./Components/DownSide/DownSide";
 import Footer from "./Components/Footer/Footer";
-import Spinner from "./Components/Spinner/Spinner";
+import Loader from "./Components/Loader/Loader";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +20,7 @@ const App = () => {
   }, 3000);
 
   return isLoading ? (
-    <Spinner />
+    <Loader />
   ) : (
     <Router>
       <Navbar />
