@@ -1,12 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/DocumentationCards/7.png";
-import img2 from "../../assets/DocumentationCards/8.png";
-import img3 from "../../assets/DocumentationCards/9.png";
-import img4 from "../../assets/DocumentationCards/10.png";
-import img5 from "../../assets/DocumentationCards/11.png";
-import img6 from "../../assets/DocumentationCards/12.png";
 
 const DownSideCards = () => {
   return (
@@ -15,9 +9,16 @@ const DownSideCards = () => {
         Documentations
       </h2>
       <div className="mt-3 mb-5 py-5 grid grid-flow-row grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xs:gap-x-4 xs:gap-y-5 md:gap-x-5 md:gap-y-6 lg:gap-x-6 lg:gap-y-7">
-        <div className="opacity-75 hover:opacity-100 transition-all duration-500 ease-in-out">
+        <div className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out">
           <Link to="https://github.com/sisi-tarak/react-interview-questions.git">
-            <img src={img1} alt="doc1" className="rounded-lg" />
+            <div className="bg-strongBgColor w-[270px] h-[216px] flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out">
+              <h2 className="text-2xl font-semibold text-headColor">
+                React JS
+              </h2>
+              <h4 className="text-2xl font-semibold text-headStrong mt-1.5">
+                Interview Questions
+              </h4>
+            </div>
           </Link>
           <div className="my-5">
             <h3 className="text-xl font-bold tracking-wider">React JS</h3>
@@ -31,9 +32,16 @@ const DownSideCards = () => {
             </p>
           </div>
         </div>
-        <div className="opacity-75 hover:opacity-100 transition-all duration-500 ease-in-out">
+        <div className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out">
           <Link to="https://github.com/sisi-tarak/data-analysis-roadmap.git">
-            <img src={img2} alt="doc1" className="rounded-lg" />
+            <div className="bg-strongBgColor w-[270px] h-[216px] flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out">
+              <h2 className="text-2xl font-semibold text-headColor">
+                Data Analysis
+              </h2>
+              <h4 className="text-2xl font-semibold text-headStrong mt-1.5">
+                Roadmap
+              </h4>
+            </div>
           </Link>
 
           <div className="my-5">
@@ -48,9 +56,14 @@ const DownSideCards = () => {
             </p>
           </div>
         </div>
-        <div className="opacity-75 hover:opacity-100 transition-all duration-500 ease-in-out">
+        <div className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out">
           <Link to="https://github.com/sisi-tarak/resume-format.git">
-            <img src={img3} alt="doc1" className="rounded-lg" />
+            <div className="bg-strongBgColor w-[270px] h-[216px] flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out">
+              <h2 className="text-2xl font-semibold text-headColor">Resume</h2>
+              <h4 className="text-2xl font-semibold text-headStrong mt-1.5">
+                Formats
+              </h4>
+            </div>
           </Link>
 
           <div className="my-5">
@@ -65,9 +78,14 @@ const DownSideCards = () => {
             </p>
           </div>
         </div>
-        <div className="opacity-75 hover:opacity-100 transition-all duration-500 ease-in-out">
+        <div className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out">
           <Link to="https://github.com/sisi-tarak/resume-guide.git">
-            <img src={img4} alt="doc1" className="rounded-lg" />
+            <div className="bg-strongBgColor w-[270px] h-[216px] flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out">
+              <h2 className="text-2xl font-semibold text-headColor">Resume</h2>
+              <h4 className="text-2xl font-semibold text-headStrong mt-1.5">
+                Guide
+              </h4>
+            </div>
           </Link>
 
           <div className="my-5">
@@ -82,9 +100,14 @@ const DownSideCards = () => {
             </p>
           </div>
         </div>
-        <div className="opacity-75 hover:opacity-100 transition-all duration-500 ease-in-out">
+        <div className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out">
           <Link to="https://github.com/sisi-tarak/Git-Cheat-Sheet.git">
-            <img src={img5} alt="doc1" className="rounded-lg" />
+            <div className="bg-strongBgColor w-[270px] h-[216px] flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out">
+              <h2 className="text-2xl font-semibold text-headColor">Git</h2>
+              <h4 className="text-2xl font-semibold text-headStrong mt-1.5">
+                Cheatsheet
+              </h4>
+            </div>
           </Link>
 
           <div className="my-5">
@@ -98,9 +121,16 @@ const DownSideCards = () => {
             </p>
           </div>
         </div>
-        <div className="opacity-75 hover:opacity-100 transition-all duration-500 ease-in-out">
+        <div className="opacity-90 hover:opacity-100 transition-all duration-300 ease-in-out">
           <Link to="https://github.com/sisi-tarak/tailwindcssCheatsheat.git">
-            <img src={img6} alt="doc1" className="rounded-lg" />
+            <div className="bg-strongBgColor w-[270px] h-[216px] flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out">
+              <h2 className="text-2xl font-semibold text-headColor">
+                Tailwind CSS
+              </h2>
+              <h4 className="text-2xl font-semibold text-headStrong mt-1.5">
+                Cheatsheet
+              </h4>
+            </div>
           </Link>
 
           <div className="my-5">
