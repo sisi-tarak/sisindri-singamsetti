@@ -12,17 +12,17 @@ const DownSideSocial = () => {
         </div>
         <div className="border border-secondaryTextColor rounded-sm flex justify-center items-center  hover:border-headStrong transition-all duration-500 ease-in-out cursor-pointer">
           <h2 className="text-headColor text-base sm:text-lg 2xl:text-xl font-semibold tracking-wider px-9 py-4">
-            Instagram
+            GitHub
           </h2>
         </div>
         <div className="border border-secondaryTextColor rounded-sm flex justify-center items-center  hover:border-headStrong transition-all duration-500 ease-in-out cursor-pointer">
           <h2 className="text-headColor text-base sm:text-lg 2xl:text-xl font-semibold tracking-wider px-9 py-4">
-            Instagram
+            LinkedIn
           </h2>
         </div>
         <div className="border border-secondaryTextColor rounded-sm flex justify-center items-center  hover:border-headStrong transition-all duration-500 ease-in-out cursor-pointer">
           <h2 className="text-headColor text-base sm:text-lg 2xl:text-xl font-semibold tracking-wider px-9 py-4">
-            Instagram
+            YouTube
           </h2>
         </div>
       </div>
