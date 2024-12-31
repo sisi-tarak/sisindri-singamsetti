@@ -10,7 +10,7 @@ const DownSideCards = () => {
         Documentations
       </h2>
       <div className="mt-3 mb-5 py-5 grid grid-flow-row grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xs:gap-x-4 xs:gap-y-5 md:gap-x-5 md:gap-y-6 lg:gap-x-6 lg:gap-y-7">
-        <div className="opacity-100 hover:opacity-80 transition-all duration-500 ease-in-out">
+        <div className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out">
           <Link to="https://github.com/sisi-tarak/react-interview-questions.git">
             <div className="bg-strongBgColor py-[74px] h-100 flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out text-center">
               <h2 className="text-lg sm:text-xl 2xl:text-2xl font-semibold text-headColor">
@@ -22,7 +22,9 @@ const DownSideCards = () => {
             </div>
           </Link>
           <div className="my-5">
-            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">React JS</h3>
+            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
+              React JS
+            </h3>
             <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
               Interview Questions
             </h6>
@@ -46,7 +48,9 @@ const DownSideCards = () => {
           </Link>
 
           <div className="my-5">
-            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">Data Analysis</h3>
+            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
+              Data Analysis
+            </h3>
             <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
               Roadmap
             </h6>
@@ -70,7 +74,9 @@ const DownSideCards = () => {
           </Link>
 
           <div className="my-5">
-            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">Resume</h3>
+            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
+              Resume
+            </h3>
             <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
               Formats
             </h6>
@@ -94,7 +100,9 @@ const DownSideCards = () => {
           </Link>
 
           <div className="my-5">
-            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">Resume</h3>
+            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
+              Resume
+            </h3>
             <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
               Guide
             </h6>
@@ -118,7 +126,9 @@ const DownSideCards = () => {
           </Link>
 
           <div className="my-5">
-            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">Git</h3>
+            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
+              Git
+            </h3>
             <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
               Cheatsheet
             </h6>
@@ -141,7 +151,9 @@ const DownSideCards = () => {
           </Link>
 
           <div className="my-5">
-            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">Tailwind CSS</h3>
+            <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
+              Tailwind CSS
+            </h3>
             <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
               Cheatsheet
             </h6>
