@@ -30,6 +30,10 @@ export default {
         iconBgColor: "#5956e8",
         footerBgColor: "#191919",
         strongBgColor: "#292930",
+        instaColorCode: "#DD2A7B",
+        linkedInColorCode: "#0077B5",
+        gitHubColorCode: "#F05033",
+        youTubeColorCode: "#FF0000",
       },
       fontFamily: {
         poppins: ["Poppins", "regular"],
