@@ -9,9 +9,9 @@ const About = () => {
         About Me
       </h1>
       <Suspense fallback={<Loader />}>
-        <Box className="flex justify-center">
-          <Box className="flex flex-col justify-center align-center w-[550px]">
-            <img alt="Remy Sharp" src={img1} className="w-full h-auto" />
+        <Box className="flex flex-col lg:flex-row justify-center">
+          <Box className="justify-items-center items-center text-center w-[550px]">
+            <img alt="Remy Sharp" src={img1} className="flex w-auto h-auto" />
           </Box>
 
           <Box className="flex flex-col justify-center mt-8 w-[650px] px-8">
