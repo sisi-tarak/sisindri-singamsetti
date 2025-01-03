@@ -1,5 +1,7 @@
 import { Container, Typography, Box } from "@mui/material";
 import React from "react";
+import { BlurText } from "../Animations/BlurText";
+import ShinyText from "../Animations/ShinyText";
 
 const UpSideCover = () => {
   return (
@@ -10,7 +12,11 @@ const UpSideCover = () => {
       <Box className="m-4 sm:m-6 md:m-10 lg:m-20 p-8 xs:p-10 sm:p-12 md:p-16 lg:p-20">
         <Box>
           <h1 className="text-headStrong text-[30px] xs:text-[35px] sm:text-[40px] md:text-[45px] lg:text-[53px] font-bold capitalize tracking-wide leading-tight">
-            SISINDRI SINGAMSETTI
+            <BlurText
+              text="Sisindri Singamsetti"
+              className="uppercase"
+              delay={100}
+            />
           </h1>
           <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold capitalize tracking-wide leading-tight">
             CODING, SOLVING &<div>INSPIRING</div>
@@ -18,9 +24,14 @@ const UpSideCover = () => {
         </Box>
         <Box className="mt-10">
           <p className="text-textColor mt-10 text-base font-normal">
-            Dive into my world of code, scalable solutions, debugging
+            <ShinyText
+              text="Dive into my world of code, scalable solutions, debugging
             adventures, late-night coffee fixes, and building the web of
-            tomorrow.
+            tomorrow."
+              disabled={false}
+              speed={5}
+              className=""
+            />
           </p>
         </Box>
       </Box>
