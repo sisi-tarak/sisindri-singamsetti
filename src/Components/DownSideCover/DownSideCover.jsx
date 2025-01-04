@@ -12,7 +12,7 @@ const DownSideCover = () => {
         maxWidth="lg"
         className="h-screen flex flex-col justify-center align-middle"
       >
-        <h1 className="text-headColor text-center tracking-widest text-5xl uppercase mb-4 mx-auto ">
+        <h1 className="text-headColor text-center tracking-widest text-2xl xs:text-3xl sm:text-4xl lg:text-5xl uppercase mb-4 mx-auto ">
           <SplitText text="DownSide" className="font-bold" delay={50} />
         </h1>
         <p className="text-secondaryTextColor text-center tracking-widest text-sm">
