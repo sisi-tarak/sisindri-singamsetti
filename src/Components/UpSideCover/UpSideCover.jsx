@@ -2,6 +2,7 @@ import { Container, Typography, Box } from "@mui/material";
 import React from "react";
 import { BlurText } from "../Animations/BlurText";
 import ShinyText from "../Animations/ShinyText";
+import { WordPullUp } from "../Animations/WordPullUp";
 
 const UpSideCover = () => {
   return (
@@ -18,9 +19,12 @@ const UpSideCover = () => {
               delay={100}
             />
           </h1>
-          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold capitalize tracking-wide leading-tight">
-            CODING, SOLVING &<div>INSPIRING</div>
-          </h1>
+
+          <WordPullUp
+            words="CODING, SOLVING & INSPIRING"
+            className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide leading-tight text-left uppercase xs:pr-10 sm:pr-20 md:pr-[9.5rem] lg:pr-32 xl:pr-48 2xl:pr-56"
+            delay={500}
+          />
         </Box>
         <Box className="mt-10">
           <p className="text-textColor mt-10 text-base font-normal">
