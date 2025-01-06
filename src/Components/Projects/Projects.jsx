@@ -17,42 +17,45 @@ const Projects = () => {
             content="Explore my portfolio featuring projects like 64 Frames, Webortex, Yes Telugu, and Aaharadhaan. Showcasing innovation, design, and development expertise"
           />
           <Box className="px-8 xs:px-24 sm:px-10 md:px-20 lg:px-24 gap-x-12 gap-y-3 grid grid-flow-row grid-cols-1 sm:grid-cols-2 ">
-            <Fade blur={true}>
-              <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out mt-10">
+            <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out mt-10">
+              <Fade blur={true}>
                 <img
                   src={Project1}
                   alt="Project 01"
                   className="rounded-t-2xl p-0 h-auto w-auto object-cover hover:opacity-60 transition-all duration-500 ease-in-out"
                 />
-              </div>
-            </Fade>
-            <Fade blur={true}>
-              <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out  mt-10">
+              </Fade>
+            </div>
+
+            <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out  mt-10">
+              <Fade blur={true}>
                 <img
                   src={Project2}
                   alt="Project 02"
                   className="rounded-t-2xl p-0 h-auto w-auto object-cover hover:opacity-60 transition-all duration-500 ease-in-out"
                 />
-              </div>
-            </Fade>
-            <Fade blur={true}>
-              <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out w-full mt-10">
+              </Fade>
+            </div>
+
+            <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out w-full mt-10">
+              <Fade blur={true}>
                 <img
                   src={Project3}
                   alt="Project 03"
                   className="rounded-t-2xl p-0 h-auto w-auto object-cover hover:opacity-60 transition-all duration-500 ease-in-out"
                 />
-              </div>
-            </Fade>
-            <Fade blur={true}>
-              <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out w-full mt-10">
+              </Fade>
+            </div>
+
+            <div className="font-poppins text-center cursor-pointer rounded-3xl opacity-100 hover:bg-opacity-70 transition-all duration-500 ease-in-out w-full mt-10">
+              <Fade blur={true}>
                 <img
                   src={Project4}
                   alt="Project 04"
                   className="rounded-t-2xl p-0 h-auto w-auto object-cover hover:opacity-60 transition-all duration-500 ease-in-out"
                 />
-              </div>
-            </Fade>
+              </Fade>
+            </div>
           </Box>
         </Suspense>
       </Container>
