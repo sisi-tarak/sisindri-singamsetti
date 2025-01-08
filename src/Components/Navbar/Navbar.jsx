@@ -70,7 +70,7 @@ const Navbar = () => {
     <Consumer>
       {(value) => {
         const { navItems } = value;
-        return (
+        return (  
     <List>
       {navItems.map((item) => (
         <ListItem key={item.id} disablePadding>
