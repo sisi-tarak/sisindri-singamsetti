@@ -27,7 +27,7 @@ const UpSideCover = () => {
           />
         </Box>
         <Box className="mt-10">
-          <p className="text-textColor mt-10 text-base font-normal">
+          <div className="text-textColor mt-10 text-base font-normal">
             <ShinyText
               text="Dive into my world of code, scalable solutions, debugging
             adventures, late-night coffee fixes, and building the web of
@@ -36,7 +36,7 @@ const UpSideCover = () => {
               speed={5}
               className=""
             />
-          </p>
+          </div>
         </Box>
       </Box>
     </Container>

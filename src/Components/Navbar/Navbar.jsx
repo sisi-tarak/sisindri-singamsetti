@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useNavigate } from "react-router-dom";
+import { Consumer } from "../Context/Context";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -38,11 +39,7 @@ const Navbar = () => {
 
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
-  const navItems = [
-    { id: 1, text: "Work", path: "/" },
-    { id: 2, text: "About", path: "/about" },
-    { id: 3, text: "Resume", path: "/resume" },
-  ];
+  
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -70,6 +67,10 @@ const Navbar = () => {
   }, []);
 
   const drawer = (
+    <Consumer>
+      {(value) => {
+        const { navItems } = value;
+        return (
     <List>
       {navItems.map((item) => (
         <ListItem key={item.id} disablePadding>
@@ -78,84 +79,94 @@ const Navbar = () => {
           </ListItemButton>
         </ListItem>
       ))}
-    </List>
+        </List>
+  )}}
+      </Consumer>
   );
 
   return (
-    
-    <Container
-      maxWidth="lg"
-      className="md:flex md:justify-center relative z-30 md:z-999 mt-9"
-      sx={{ flexGrow: 1 }}
-    >
-      <AppBar position="static" color="transparent" elevation={0}>
-        <Toolbar>
-          <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
-            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-              <Box
-                component="span"
-                className="text-headColor"
-                sx={{ fontWeight: "bold", fontSize: "1.2rem" }}
-              >
-                Sisindri Singamsetti
-              </Box>
-            </Link>
-          </Box>
+    <Consumer>
+      {(value) => {
+        const { navItems } = value;
+      
+        return (
+          <Container
+            maxWidth="lg"
+            className="md:flex md:justify-center relative z-30 md:z-999 mt-9"
+            sx={{ flexGrow: 1 }}
+          >
+            <AppBar position="static" color="transparent" elevation={0}>
+              <Toolbar>
+                <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
+                  <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                    <Box
+                      component="span"
+                      className="text-headColor"
+                      sx={{ fontWeight: "bold", fontSize: "1.2rem" }}
+                    >
+                      Sisindri Singamsetti
+                    </Box>
+                  </Link>
+                </Box>
 
-          {!isMobile ? (
-            <div className="flex items-center text-textColor">
-              {navItems.map((item) => (
-                <Button
-                  key={item.id}
-                  onClick={() => handleNavigation(item.path)}
-                  sx={{
-                    color: "#fafafa",
-                    textTransform: "capitalize",
-                    mx: "8px",
-                    letterSpacing: "1px",
-                    "&:hover": {
-                      backgroundColor: "rgba(0,0,0,0.05)",
-                    },
-                  }}
-                >
-                  {item.text}
-                </Button>
-              ))}
-            </div>
-          ) : (
-            <IconButton
-              sx={{
-                color: "#ffffff",
+                {!isMobile ? (
+                  <div className="flex items-center text-textColor">
+                    {navItems.map((navItem) => (
+                      <Button
+                        key={navItem.id}
+                        onClick={() => handleNavigation(navItem.path)}
+                        sx={{
+                          color: "#fafafa",
+                          textTransform: "capitalize",
+                          mx: "8px",
+                          letterSpacing: "1px",
+                          "&:hover": {
+                            backgroundColor: "rgba(0,0,0,0.05)",
+                          },
+                        }}
+                      >
+                        {navItem.text}
+                      </Button>
+                    ))}
+                  </div>
+                ) : (
+                  <IconButton
+                    sx={{
+                      color: "#ffffff",
+                    }}
+                    aria-label="open drawer"
+                    edge="end"
+                    onClick={handleDrawerToggle}
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                )}
+              </Toolbar>
+            </AppBar>
+
+            <Drawer
+              variant="temporary"
+              anchor="right"
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true,
               }}
-              aria-label="open drawer"
-              edge="end"
-              onClick={handleDrawerToggle}
+              sx={{
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: 240,
+                  backgroundColor: "background.default",
+                },
+              }}
             >
-              <MenuIcon />
-            </IconButton>
-          )}
-        </Toolbar>
-      </AppBar>
-
-      <Drawer
-        variant="temporary"
-        anchor="right"
-        open={mobileOpen}
-        onClose={handleDrawerToggle}
-        ModalProps={{
-          keepMounted: true,
-        }}
-        sx={{
-          "& .MuiDrawer-paper": {
-            boxSizing: "border-box",
-            width: 240,
-            backgroundColor: "background.default",
-          },
-        }}
-      >
-        {drawer}
-      </Drawer>
-    </Container>
+              {drawer}
+            </Drawer>
+          </Container>
+        )
+      }}
+    </Consumer>
+    
   );
 };
 
