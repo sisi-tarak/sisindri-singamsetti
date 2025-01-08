@@ -39,8 +39,6 @@ const Navbar = () => {
 
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
-  
-
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -70,25 +68,26 @@ const Navbar = () => {
     <Consumer>
       {(value) => {
         const { navItems } = value;
-        return (  
-    <List>
-      {navItems.map((item) => (
-        <ListItem key={item.id} disablePadding>
-          <ListItemButton onClick={() => handleNavigation(item.path)}>
-            <ListItemText primary={item.text} />
-          </ListItemButton>
-        </ListItem>
-      ))}
-        </List>
-  )}}
-      </Consumer>
+        return (
+          <List>
+            {navItems.map((item) => (
+              <ListItem key={item.id} disablePadding>
+                <ListItemButton onClick={() => handleNavigation(item.path)}>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        );
+      }}
+    </Consumer>
   );
 
   return (
     <Consumer>
       {(value) => {
         const { navItems } = value;
-      
+
         return (
           <Container
             maxWidth="lg"
@@ -97,8 +96,13 @@ const Navbar = () => {
           >
             <AppBar position="static" color="transparent" elevation={0}>
               <Toolbar>
-                <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
-                  <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <Box
+                  sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}
+                >
+                  <Link
+                    to="/"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
                     <Box
                       component="span"
                       className="text-headColor"
@@ -163,10 +167,9 @@ const Navbar = () => {
               {drawer}
             </Drawer>
           </Container>
-        )
+        );
       }}
     </Consumer>
-    
   );
 };
 
