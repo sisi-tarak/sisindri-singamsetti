@@ -9,6 +9,98 @@ const Context = React.createContext();
 
 export class Provider extends Component {
   state = {
+    sisindrisingamsetti: [
+      {
+        personalDetails: {
+          name: "Sisindri Singamsetti",
+          title: "Hardworking and Motivated IT Student",
+          bio: "I am Sisindri Singamsetti, a hardworking and motivated student with a strong focus on learning and growth. Currently pursuing a B.Tech in Information Technology at Sree Venkateswara College of Engineering, I am passionate about web development, backend technologies, and community-driven learning.",
+        },
+        education: [
+          {
+            level: "10th Grade",
+            institution: "ZP High School Bhakarapeta",
+            score: "598/600",
+            year: "Completed",
+          },
+          {
+            level: "Diploma",
+            institution: "Sree Vidyanikethan Engineering College",
+            score: "86.86%",
+            year: "Completed",
+          },
+          {
+            level: "B.Tech",
+            institution: "Sree Venkateswara College of Engineering",
+            specialization: "Information Technology",
+            year: "2nd Year",
+          },
+        ],
+        skills: [
+          "ReactJS",
+          "Tailwind CSS",
+          "JavaScript",
+          "NodeJS",
+          "ExpressJS",
+          "HTML",
+          "CSS",
+          "Redux",
+          "Material UI",
+          "Bootstrap",
+        ],
+        achievements: [
+          "State Level Project Expo Participant (2022)",
+          "Web Lead for Google Developer Group (GDG) at college",
+          "Co-founder of Webortex, a startup focusing on web and app development",
+        ],
+        experience: {
+          internship:
+            "No official internships yet, but completed around seven full-stack projects for US clients and Indian clients.",
+          startup: {
+            name: "Webortex",
+            description:
+              "A startup focused on web and app development, providing real-time project experience to students through the Student Incubator Program.",
+            roles: [
+              "Co-founder",
+              "Trainer for front-end development topics like ReactJS, Tailwind CSS, and Material UI",
+            ],
+          },
+          gdg: {
+            name: "Google Developer Group (GDG)",
+            role: "Web Lead",
+            description:
+              "Guiding and supporting students in web development technologies.",
+          },
+        },
+        initiatives: [
+          {
+            name: "Student Incubator Program (SIP)",
+            description:
+              "An initiative to bridge the skill gap between students and the job market by offering personalized training and real-world project experience.",
+            features: [
+              "One-to-one mentoring",
+              "Hands-on training in front-end and backend development",
+              "Real-time project exposure",
+            ],
+          },
+        ],
+        interests: [
+          "Teaching front-end development",
+          "Creating Instagram reels for educational purposes",
+          "Building real-time projects",
+          "Supporting student skill development through SIP",
+        ],
+        contact: {
+          email: "sisindrisingamsetti@gmail.com",
+          phone: "+91 9502414128",
+          linkedin: "https://www.linkedin.com/in/sisitarak/",
+          github: "https://github.com/sisi-tarak",
+          instagram: "https://www.instagram.com/sisi_tarakk/",
+          youtube: "https://youtube.com/@sisi-tarakk",
+        },
+      },
+    ],
+
     navItems: [
       {
         id: 1,
