@@ -86,7 +86,7 @@ export class Provider extends Component {
         ],
         interests: [
           "Teaching front-end development",
-          "Creating Instagram reels for educational purposes",
+          "Content creating",
           "Building real-time projects",
           "Supporting student skill development through SIP",
         ],
