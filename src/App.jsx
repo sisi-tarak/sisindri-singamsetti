@@ -8,6 +8,7 @@ import DownSide from "./Components/DownSide/DownSide";
 import Footer from "./Components/Footer/Footer";
 import Loader from "./Components/Loader/Loader";
 import { Provider } from "./Components/Context/Context";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,18 +20,19 @@ const App = () => {
   return isLoading ? (
     <Loader />
   ) : (
-      <Provider>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/downside" element={<DownSide />} />
-          </Routes>
-          <Footer />
-        </Router>
-      </Provider>
+    <Provider>
+      <Router>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/downside" element={<DownSide />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </Provider>
   );
 };
 
