@@ -52,7 +52,7 @@ const App = () => {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 3000);
+  }, 9000);
 
   return isLoading ? (
     <Loader />
