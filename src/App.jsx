@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Loader from "./Components/Loader/Loader";
 import { Provider } from "./Components/Context/Context";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
-import Sisi from "./Components/sisi/sisi";
+import Sisi from "./Components/sisi/Sisi";
 
 const HomePage = lazy(() => import("./Components/HomePage/HomePage"));
 const About = lazy(() => import("./Components/About/About"));

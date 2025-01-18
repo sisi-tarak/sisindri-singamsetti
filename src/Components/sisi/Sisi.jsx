@@ -1,7 +1,7 @@
 import React from "react";
 import MainPage from "./MainPage";
 
-const sisi = () => {
+const Sisi = () => {
   return (
     <>
       <MainPage />
@@ -9,4 +9,4 @@ const sisi = () => {
   );
 };
 
-export default sisi;
+export default Sisi;
