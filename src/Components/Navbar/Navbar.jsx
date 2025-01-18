@@ -156,11 +156,22 @@ const Navbar = () => {
               ModalProps={{
                 keepMounted: true,
               }}
+              className="text-textColor"
               sx={{
+                "& .css-rizt0-MuiTypography-root": {
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  lineHeight: "26px",
+                  textTransform: "capitalize",
+                  fontWeight: "medium",
+                },
                 "& .MuiDrawer-paper": {
+                  color: "#efefef",
+                  paddingTop: "50px",
+                  paddingLeft: "20px",
                   boxSizing: "border-box",
-                  width: 240,
-                  backgroundColor: "background.default",
+                  width: 250,
+                  backgroundColor: "#121212",
                 },
               }}
             >

@@ -102,7 +102,7 @@ const ScrollToTop = () => {
   return (
     <>
       <Box
-        className={`fixed right-4 bottom-4 lg:right-7 lg:bottom-7 z-[9999] bg-textStrong w-12 h-12 p-auto rounded-full flex align-middle justify-center cursor-pointer transition-all duration-300 ${
+        className={`fixed right-4 bottom-4 lg:right-8 lg:bottom-8 z-[9999] bg-headColor xl:size-12 size-10 p-auto rounded-full flex align-middle justify-center cursor-pointer transition-all duration-300 ${
           isVisible ? "transition-opacity opacity-90 hover:opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
         onClick={scrollToTop}
