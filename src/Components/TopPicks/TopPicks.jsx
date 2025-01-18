@@ -34,7 +34,7 @@ const TopPicks = () => {
                       <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
                         {topPick.title}
                       </h3>
-                      <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
+                      <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-textStrong mt-1.5">
                         {topPick.subtitle}
                       </h6>
                       <p className="text-xs sm:text-sm font-poppins mt-2 tracking-wide">

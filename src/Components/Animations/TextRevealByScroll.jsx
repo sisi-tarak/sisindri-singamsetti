@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import { cn } from "../Lib/Utils";
+import { cn } from "../lib/utils";
 
 const TextRevealByScroll = ({ text, className }) => {
   const targetRef = useRef(null);

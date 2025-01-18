@@ -32,7 +32,7 @@ const DownSideCards = () => {
                       <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-wider">
                         {documentationData.headtext}
                       </h3>
-                      <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-headStrong mt-1.5">
+                      <h6 className="text-sm sm:text-base 2xl:text-lg font-semibold text-textStrong mt-1.5">
                         {documentationData.subtext}
                       </h6>
                       <p className="text-xs sm:text-sm font-poppins mt-2 tracking-wide">

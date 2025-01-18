@@ -9,7 +9,7 @@ const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
 
 export default function BlobCursor({
   blobType = "square",
-  fillColor = "#EA88FB",
+  fillColor = "#ffab00",
 }) {
   const [trail, api] = useTrail(3, (i) => ({
     xy: [0, 0],

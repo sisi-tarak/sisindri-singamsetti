@@ -13,12 +13,12 @@ export default {
     },
     extend: {
       colors: {
-        backgroundColor: "#050505",
+        backgroundColor: "#000000",
         headColor: "#ffffff",
         textColor: "#fafafa",
         secondaryTextColor: "#939b9f",
-        headStrong: "#EA88FB",
-        textStrong: "#E6A6FD",
+        headStrong: "#ffab00",
+        textStrong: "#f5d073",
         buttonHoverBorder: "#694976",
         buttonBgColor: "#9c27b0",
         buttonBorder: "rgba(156, 39, 176, 0.5)",

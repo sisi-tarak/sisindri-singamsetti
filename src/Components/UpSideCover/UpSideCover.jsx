@@ -8,7 +8,7 @@ const UpSideCover = () => {
   return (
     <Container
       maxWidth="lg"
-      className="mb-8 xs:mb-12 sm:mb-16 md:mb-24 lg:mb-44 h-full w-full relative"
+      className="flex justify-start items-center h-svh md:h-dvh lg:h-lvh 2xl:h-screen w-full relative"
     >
       <Box className="m-4 sm:m-6 md:m-10 lg:m-20 p-8 xs:p-10 sm:p-12 md:p-16 lg:p-20">
         <Box>
