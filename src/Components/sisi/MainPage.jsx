@@ -23,8 +23,8 @@ const MainPage = () => {
       </div>
 
       <Container maxWidth="xl" className="mt-8 px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-4 w-full">
-          <div className="lg:w-[300px] w-full">
+        <div className="flex flex-col sm:flex-row gap-4 w-full">
+          <div className="lg:w-[300px] w-full sm:w-0">
             <div
               className="h-32 lg:h-[600px] w-full bg-adsBgColor rounded-md 
                           shadow-lg transition-all duration-300 hover:shadow-xl"
@@ -36,14 +36,14 @@ const MainPage = () => {
               <div className="flex flex-wrap justify-center sm:justify-start gap-3">
                 {buttonLabels.map((label, index) => (
                   <button key={index} className="ui-btn font-Montserrat">
-                    <span>{label}</span>
+                    <span className="text-[14px] sm:text-[16px]">{label}</span>
                   </button>
                 ))}
               </div>
             </div>
           </div>
 
-          <div className="lg:w-[300px] w-full">
+          <div className="lg:w-[300px] w-full sm:w-[50%]">
             <div
               className="h-32 lg:h-[600px] w-full bg-adsBgColor rounded-md 
                           shadow-lg transition-all duration-300 hover:shadow-xl"
