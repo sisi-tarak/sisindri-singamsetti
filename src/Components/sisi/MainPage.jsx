@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Container } from "@mui/material";
-import sisiImg from "./assets/sisi.png";
+import sisiImg from "../../assets/sisi.jpg";
 import "./index.css";
 import Roadmap from "./Roadmap";
 import Resources from "./Resources";
-import DownSideSocial from "../DownSideSocial/DownSideSocial";
 import { Consumer } from "./context/sisicontext";
+import SocialHandlers from "./SocialHandlers";
 
 const MainPage = () => {
   const scrollToSection = (sectionId) => {
@@ -35,11 +35,11 @@ const MainPage = () => {
         const { buttonLabels } = value;
         return (
           <div className="w-full min-h-screen bg-backgroundBgColor">
-            <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-center w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
               <img
                 src={sisiImg}
                 alt="sisi"
-                className="w-full max-h-[500px] object-cover rounded-2xl transform scale-90"
+                className="w-auto max-h-[560px] md:h-full object-cover rounded-2xl transform scale-90"
               />
             </div>
 
@@ -61,7 +61,7 @@ const MainPage = () => {
                           key={buttonLabel.id}
                           onClick={() => scrollToSection(buttonLabel.link)}
                         >
-                          <span className="text-[12px] sm:text-[14px] lg:text-[16px]">
+                          <span className="text-[14px] md:text-[16px]">
                             {buttonLabel.label}
                           </span>
                         </button>
@@ -82,7 +82,7 @@ const MainPage = () => {
                           Follow me on
                           <span className="text-textStrong">...</span>
                         </h1>
-                        <DownSideSocial />
+                        <SocialHandlers />
                       </div>
                     </div>
 

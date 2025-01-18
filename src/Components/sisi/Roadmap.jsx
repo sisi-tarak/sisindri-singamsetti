@@ -17,7 +17,7 @@ const Roadmap = () => {
                 <Link
                   key={roadmap.id}
                   to={roadmap.link}
-                  className="text-[14px] md:text-base hover:text-textStrong transition-all duration-300 ease-in-out"
+                  className="text-base md:text-lg hover:text-textStrong transition-all duration-300 ease-in-out"
                 >
                   {roadmap.title}
                 </Link>

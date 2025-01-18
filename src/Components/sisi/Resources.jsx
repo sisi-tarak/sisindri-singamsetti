@@ -17,7 +17,7 @@ const Resources = () => {
                 <Link
                   key={resource.id}
                   to={resource.link}
-                  className="text-[14px] md:text-base hover:text-textStrong transition-all duration-300 ease-in-out"
+                  className="text-base md:text-lg hover:text-textStrong transition-all duration-300 ease-in-out"
                 >
                   {resource.title}
                 </Link>
