@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { Container } from "@mui/material";
-import sisiImg from "../../assets/sisi.jpg";
 import "./index.css";
-import Roadmap from "./Roadmap";
-import Resources from "./Resources";
 import { Consumer } from "./context/sisicontext";
-import SocialHandlers from "./SocialHandlers";
+
+const Resources = lazy(() => import("./Resources"));
+const Roadmap = lazy(() => import("./Roadmap"));
+const SocialHandlers = lazy(() => import("./SocialHandlers"));
+
+const sisiImg = require("../../assets/sisi.jpg").default;
 
 const MainPage = () => {
   const scrollToSection = (sectionId) => {
