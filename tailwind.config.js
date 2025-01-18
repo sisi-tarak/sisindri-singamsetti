@@ -12,6 +12,9 @@ export default {
       "2xl": { min: "1536px" },
     },
     extend: {
+      animation: {
+        chitchat: "chitchat 1.2s linear both",
+      },
       colors: {
         backgroundColor: "#000000",
         headColor: "#ffffff",
@@ -30,6 +33,7 @@ export default {
         iconBgColor: "#5956e8",
         footerBgColor: "#191919",
         strongBgColor: "#292930",
+        adsBgColor: "#ffdf8a",
         instaColorCode: "#DD2A7B",
         linkedInColorCode: "#0077B5",
         gitHubColorCode: "#F05033",
