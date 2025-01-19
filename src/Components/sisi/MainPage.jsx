@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, lazy } from "react";
 import { Container } from "@mui/material";
 import "./index.css";
 import { Consumer } from "./context/sisicontext";
@@ -7,7 +7,7 @@ const Resources = lazy(() => import("./Resources"));
 const Roadmap = lazy(() => import("./Roadmap"));
 const SocialHandlers = lazy(() => import("./SocialHandlers"));
 
-const sisiImg = require("../../assets/sisi.jpg").default;
+import sisiImg from "./assets/sisi.png";
 
 const MainPage = () => {
   const scrollToSection = (sectionId) => {
