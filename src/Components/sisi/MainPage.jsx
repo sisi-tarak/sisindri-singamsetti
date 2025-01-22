@@ -54,8 +54,8 @@ const MainPage = () => {
                   ></div>
                 </div>
 
-                <div className="flex bg-footerBgColor">
-                  <div className="rounded-md p-4 sm:p-6">
+                <div className="flex bg-footerBgColor w-full sm:w-4/6 md:w-full">
+                  <div className="rounded-md p-4 sm:p-6 w-full">
                     <div className="flex flex-wrap justify-center sm:justify-start gap-3">
                       {buttonLabels.map((buttonLabel) => (
                         <button
@@ -98,9 +98,9 @@ const MainPage = () => {
                   </div>
                 </div>
 
-                <div className="lg:w-[300px] w-full sm:w-[60%] md:w-[40%]">
+                <div className="lg:w-[300px] w-full sm:w-[35%] md:w-[50%]">
                   <div
-                    className="h-32 lg:h-[600px] w-full bg-adsBgColor rounded-md 
+                    className="h-32 lg:h-[600px] bg-adsBgColor rounded-md 
                                 shadow-lg transition-all duration-300 hover:shadow-xl"
                   ></div>
                 </div>

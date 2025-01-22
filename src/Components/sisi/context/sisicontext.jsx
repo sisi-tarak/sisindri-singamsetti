@@ -57,12 +57,71 @@ export class Provider extends Component {
     resources: [
       {
         id: 1,
-        title: "FrontEnd Resources",
+        title: "Top20 Java Leet Questions",
         description:
-          "Discover the best resources to learn front-end development.",
+          "A comprehensive list of top 20 Java coding questions and answers.",
         link: "#",
       },
     ],
+
+    resourcePage: {
+      title: "",
+      para1: "",
+      para2: "",
+      buttons: {
+        btn1: {
+          text: "",
+          link: "/",
+        },
+        btn2: {
+          text: "",
+          link: "/",
+        },
+        btn3: {
+          text: "",
+          link: "/",
+        },
+      },
+      images: {
+        image1: {
+          src: "",
+          alt: "",
+        },
+        image2: {
+          src: "",
+          alt: "",
+        },
+      },
+    },
+    roadmapPage: {
+      title: "",
+      para1: "",
+      para2: "",
+      buttons: {
+        btn1: {
+          text: "",
+          link: "/",
+        },
+        btn2: {
+          text: "",
+          link: "/",
+        },
+        btn3: {
+          text: "",
+          link: "/",
+        },
+      },
+      images: {
+        image1: {
+          src: "",
+          alt: "",
+        },
+        image2: {
+          src: "",
+          alt: "",
+        },
+      },
+    },
   };
   render() {
     return (

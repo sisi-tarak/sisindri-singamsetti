@@ -8,22 +8,22 @@ const Roadmap = () => {
       {(value) => {
         const { roadmaps } = value;
         return (
-          <section className="font-Montserrat" id="roadmaps">
+          <div className="font-Montserrat" id="roadmaps">
             <h1 className="text-xl md:text-2xl tracking-wide font-semibold">
               Roadmaps
             </h1>
-            <div className="flex flex-col gap-y-2 pl-10 mt-4">
+            <div className="flex flex-col gap-x-5 gap-y-2 px-10 mt-4 w-full">
               {roadmaps.map((roadmap) => (
                 <Link
                   key={roadmap.id}
                   to={roadmap.link}
-                  className="text-base md:text-lg hover:text-textStrong transition-all duration-300 ease-in-out"
+                  className="text-base md:text-lg hover:bg-secondaryTextColor/10 rounded-lg hover:text-textStrong transition-all duration-300 ease-in-out px-6 py-3"
                 >
                   {roadmap.title}
                 </Link>
               ))}
             </div>
-          </section>
+          </div>
         );
       }}
     </Consumer>
