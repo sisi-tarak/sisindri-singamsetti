@@ -64,35 +64,38 @@ export class Provider extends Component {
       },
     ],
 
-    resourcePage: {
-      title: "",
-      para1: "",
-      para2: "",
-      buttons: {
-        btn1: {
-          text: "",
-          link: "/",
+    resourcesPage: [
+      {
+        id: 1,
+        title: "a",
+        para1: "1",
+        para2: "2",
+        buttons: {
+          btn1: {
+            text: "btn1",
+            link: "/",
+          },
+          btn2: {
+            text: "btn2",
+            link: "/",
+          },
+          btn3: {
+            text: "btn3",
+            link: "/",
+          },
         },
-        btn2: {
-          text: "",
-          link: "/",
-        },
-        btn3: {
-          text: "",
-          link: "/",
+        images: {
+          image1: {
+            src: "",
+            alt: "",
+          },
+          image2: {
+            src: "",
+            alt: "",
+          },
         },
       },
-      images: {
-        image1: {
-          src: "",
-          alt: "",
-        },
-        image2: {
-          src: "",
-          alt: "",
-        },
-      },
-    },
+    ],
     roadmapPage: {
       title: "",
       para1: "",

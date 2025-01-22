@@ -8,7 +8,10 @@ const Resources = () => {
       {(value) => {
         const { resources } = value;
         return (
-          <section className="font-Montserrat my-10" id="resources">
+          <section
+            className="font-Montserrat my-10"
+            id="resources"
+          >
             <h1 className="text-xl md:text-2xl tracking-wide font-semibold">
               Resources
             </h1>
@@ -16,7 +19,7 @@ const Resources = () => {
               {resources.map((resource) => (
                 <Link
                   key={resource.id}
-                  to={resource.link}
+                  to={`/sisi/resources/${resource.title}`}
                   className="text-base md:text-lg hover:bg-secondaryTextColor/10 rounded-lg hover:text-textStrong transition-all duration-300 ease-in-out px-6 py-3"
                 >
                   {resource.title}
