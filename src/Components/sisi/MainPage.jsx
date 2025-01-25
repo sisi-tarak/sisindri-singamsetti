@@ -1,7 +1,7 @@
 import React, { useEffect, lazy } from "react";
 import { Container } from "@mui/material";
 import "./index.css";
-import { Consumer } from "./context/sisicontext";
+import { Consumer } from "../Context/Context";
 
 const Resources = lazy(() => import("./Resources"));
 const Roadmap = lazy(() => import("./Roadmap"));

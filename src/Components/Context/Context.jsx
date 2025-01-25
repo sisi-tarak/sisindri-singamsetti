@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { createContext, Component } from "react";
 
 import Project1 from "../../assets/Projects/01.png";
 import Project2 from "../../assets/Projects/02.png";
 import Project3 from "../../assets/Projects/03.png";
 import Project4 from "../../assets/Projects/04.png";
 
-const Context = React.createContext();
+const Context = createContext();
 
 export class Provider extends Component {
   state = {
@@ -269,15 +269,117 @@ export class Provider extends Component {
         link: "https://github.com/sisi-tarak/tailwindcssCheatsheat.git",
       },
     ],
+
+    // for sisi content page
+    buttonLabels: [
+      {
+        id: 1,
+        label: "Roadmaps",
+        link: "roadmaps",
+      },
+      {
+        id: 2,
+        label: "Resources",
+        link: "resources",
+      },
+      {
+        id: 3,
+        label: "Projects",
+        link: "",
+      },
+      {
+        id: 4,
+        label: "Tutorials",
+        link: "",
+      },
+      {
+        id: 5,
+        label: "Contact",
+        link: "",
+      },
+    ],
+    roadmaps: [
+      {
+        id: 1,
+        title: "Front-end Roadmap",
+        description:
+          "Discover the best practices for building a stunning front-end application.",
+        link: "#",
+      },
+      {
+        id: 2,
+        title: "Back-end Roadmap",
+        description:
+          "Learn how to build scalable and maintainable back-end applications.",
+        link: "#",
+      },
+      {
+        id: 3,
+        title: "Mobile App Roadmap",
+        description:
+          "Learn how to create cross-platform mobile apps using modern technologies.",
+        link: "#",
+      },
+    ],
+    resources: [
+      {
+        id: 1,
+        title: "Top20 Java Leet Questions",
+        description:
+          "A comprehensive list of top 20 Java coding questions and answers.",
+        link: "#",
+      },
+    ],
+
+    resources: [
+      {
+        id: 1,
+        title: "Top 20 Java Leet Questions",
+        slug: "java-leet-questions",
+        fullTitle: "Comprehensive Guide to Top 20 Java Leetcode Questions",
+        description:
+          "A comprehensive list of top 20 Java coding questions and answers.",
+        paragraphs: [
+          "This guide covers the most frequently asked Java coding questions in technical interviews, focusing on problem-solving and algorithmic thinking.",
+          "Each question is carefully selected to represent different problem-solving paradigms and coding techniques used in real-world software development.",
+        ],
+        images: ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+        buttons: [
+          {
+            text: "View Solutions",
+            link: "https://github.com/your-repo/java-leet-solutions",
+          },
+          {
+            text: "Practice Platform",
+            link: "https://leetcode.com/problemset/",
+          },
+          {
+            text: "Interview Prep",
+            link: "/interview-prep",
+          },
+        ],
+      },
+    ],
+  };
+
+  getResourceBySlug = (slug) => {
+    return this.state.resources.find((resource) => resource.slug === slug);
   };
 
   render() {
     return (
-      <Context.Provider value={this.state}>
+      <Context.Provider
+        value={{
+          ...this.state,
+          getResourceBySlug: this.getResourceBySlug,
+        }}
+      >
         {this.props.children}
       </Context.Provider>
     );
   }
 }
+
+export { Context };
 
 export const Consumer = Context.Consumer;

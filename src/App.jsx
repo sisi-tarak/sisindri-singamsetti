@@ -5,7 +5,8 @@ import Footer from "./Components/Footer/Footer";
 import Loader from "./Components/Loader/Loader";
 import { Provider } from "./Components/Context/Context";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
-import Sisi from "./Components/sisi/Sisi";
+import Sisi from "./Components/sisi/sisi";
+import ResourcePage from "./Components/sisi/ResourcePage";
 
 const HomePage = lazy(() => import("./Components/HomePage/HomePage"));
 const About = lazy(() => import("./Components/About/About"));
@@ -67,6 +68,7 @@ const App = () => {
             <Route path="/resume" element={<WrappedResume />} />
             <Route path="/downside" element={<WrappedDownSide />} />
             <Route path="/sisi" element={<Sisi />} />
+            <Route path="/sisi/resource/:slug" element={<ResourcePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
