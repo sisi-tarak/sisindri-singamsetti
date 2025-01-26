@@ -8,7 +8,10 @@ const Resources = () => {
       {(value) => {
         const { resources } = value;
         return (
-          <section className="font-Montserrat my-10" id="resources">
+          <section
+            className="font-Montserrat my-10"
+            id="resources"
+          >
             <h1 className="text-xl md:text-2xl tracking-wide font-semibold">
               Resources
             </h1>

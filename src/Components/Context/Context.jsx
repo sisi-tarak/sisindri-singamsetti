@@ -362,10 +362,6 @@ export class Provider extends Component {
     ],
   };
 
-  getResourceBySlug = (slug) => {
-    return this.state.resources.find((resource) => resource.slug === slug);
-  };
-
   render() {
     return (
       <Context.Provider value={this.state}>
