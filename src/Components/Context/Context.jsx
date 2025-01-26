@@ -1,11 +1,11 @@
-import React, { createContext, Component } from "react";
+import React, { Component } from "react";
 
 import Project1 from "../../assets/Projects/01.png";
 import Project2 from "../../assets/Projects/02.png";
 import Project3 from "../../assets/Projects/03.png";
 import Project4 from "../../assets/Projects/04.png";
 
-const Context = createContext();
+const Context = React.createContext();
 
 export class Provider extends Component {
   state = {
@@ -368,18 +368,11 @@ export class Provider extends Component {
 
   render() {
     return (
-      <Context.Provider
-        value={{
-          ...this.state,
-          getResourceBySlug: this.getResourceBySlug,
-        }}
-      >
+      <Context.Provider value={this.state}>
         {this.props.children}
       </Context.Provider>
     );
   }
 }
-
-export { Context };
 
 export const Consumer = Context.Consumer;
