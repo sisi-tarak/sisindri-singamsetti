@@ -321,21 +321,467 @@ export class Provider extends Component {
         link: "#",
       },
     ],
-    resources: [
-      {
-        id: 1,
-        title: "Top20 Java Leet Questions",
-        description:
-          "A comprehensive list of top 20 Java coding questions and answers.",
-        link: "#",
-      },
-    ],
 
     resources: [
       {
         id: 1,
         title: "Top 20 Java Leet Questions",
-        slug: "java-leet-questions",
+        slug: "java-leetcode-questions",
+        fullTitle: "Comprehensive Guide to Top 20 Java Leetcode Questions",
+        description:
+          "A comprehensive list of top 20 Java coding questions and answers.",
+        paragraphs: [
+          "This guide covers the most frequently asked Java coding questions in technical interviews, focusing on problem-solving and algorithmic thinking.",
+          "Each question is carefully selected to represent different problem-solving paradigms and coding techniques used in real-world software development.",
+        ],
+        questions: [
+          {
+            id: 1,
+            title: "Two Sum",
+            problem:
+              "Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.",
+            code: `public int[] twoSum(int[] nums, int target) {
+      Map<Integer, Integer> map = new HashMap<>();
+      for (int i = 0; i < nums.length; i++) {
+          int complement = target - nums[i];
+          if (map.containsKey(complement)) {
+              return new int[] { map.get(complement), i };
+          }
+          map.put(nums[i], i);
+      }
+      return new int[] {};
+  }`,
+            explanation:
+              "Use a HashMap to store each number and its index. For each number, calculate the complement and check if it exists in the map.",
+          },
+          {
+            id: 2,
+            title: "Reverse Linked List",
+            problem: "Reverse a singly linked list.",
+            code: `public ListNode reverseList(ListNode head) {
+      ListNode prev = null;
+      ListNode curr = head;
+      while (curr != null) {
+          ListNode nextTemp = curr.next;
+          curr.next = prev;
+          prev = curr;
+          curr = nextTemp;
+      }
+      return prev;
+  }`,
+            explanation:
+              "Iterate through the list, reversing links by changing each node's next pointer to the previous node.",
+          },
+          {
+            id: 3,
+            title: "Valid Parentheses",
+            problem:
+              "Determine if a string containing only parentheses `()`, `{}`, `[]` is valid.",
+            code: `public boolean isValid(String s) {
+      Stack<Character> stack = new Stack<>();
+      for (char c : s.toCharArray()) {
+          if (c == '(') stack.push(')');
+          else if (c == '{') stack.push('}');
+          else if (c == '[') stack.push(']');
+          else if (stack.isEmpty() || stack.pop() != c) return false;
+      }
+      return stack.isEmpty();
+  }`,
+            explanation:
+              "Use a stack to track opening parentheses. Push corresponding closing parentheses and validate against incoming characters.",
+          },
+          {
+            id: 4,
+            title: "Merge Two Sorted Lists",
+            problem: "Merge two sorted linked lists into one sorted list.",
+            code: `public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+      ListNode dummy = new ListNode();
+      ListNode tail = dummy;
+  
+      while (list1 != null && list2 != null) {
+          if (list1.val <= list2.val) {
+              tail.next = list1;
+              list1 = list1.next;
+          } else {
+              tail.next = list2;
+              list2 = list2.next;
+          }
+          tail = tail.next;
+      }
+  
+      tail.next = (list1 != null) ? list1 : list2;
+      return dummy.next;
+  }`,
+            explanation:
+              "Use a dummy node to simplify merging. Compare nodes from both lists and append the smaller one.",
+          },
+          {
+            id: 5,
+            title: "Longest Substring Without Repeating Characters",
+            problem:
+              "Find the length of the longest substring without repeating characters.",
+            code: `public int lengthOfLongestSubstring(String s) {
+      Set<Character> set = new HashSet<>();
+      int left = 0;
+      int maxLen = 0;
+  
+      for (int right = 0; right < s.length(); right++) {
+          while (set.contains(s.charAt(right))) {
+              set.remove(s.charAt(left));
+              left++;
+          }
+          set.add(s.charAt(right));
+          maxLen = Math.max(maxLen, right - left + 1);
+      }
+  
+      return maxLen;
+  }`,
+            explanation:
+              "Use a sliding window approach. Maintain a HashSet to store characters in the current window.",
+          },
+          {
+            id: 6,
+            title: "Climbing Stairs",
+            problem:
+              "You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+            code: `public int climbStairs(int n) {
+      if (n <= 1) {
+          return 1;
+      }
+      int[] dp = new int[n + 1];
+      dp[0] = 1;
+      dp[1] = 1;
+      for (int i = 2; i <= n; i++) {
+          dp[i] = dp[i - 1] + dp[i - 2];
+      }
+      return dp[n];
+  }`,
+            explanation:
+              "Use dynamic programming. The number of ways to reach step i is the sum of ways to reach steps i-1 and i-2.",
+          },
+          {
+            id: 7,
+            title: "Binary Search",
+            problem:
+              "Given a sorted array of integers `nums` and an integer `target`, write an efficient algorithm to search for `target`. Return its index or -1 if not found.",
+            code: `public int search(int[] nums, int target) {
+      int left = 0;
+      int right = nums.length - 1;
+  
+      while (left <= right) {
+          int mid = left + (right - left) / 2;
+          if (nums[mid] == target) {
+              return mid;
+          } else if (nums[mid] < target) {
+              left = mid + 1;
+          } else {
+              right = mid - 1;
+          }
+      }
+  
+      return -1;
+  }`,
+            explanation:
+              "Use binary search to efficiently find the target. Divide the search space in half at each iteration.",
+          },
+          {
+            id: 8,
+            title: "Implement Queue using Stacks",
+            problem:
+              "Implement a first-in-first-out (FIFO) queue using only two stacks.",
+            code: `class MyQueue {
+      private Stack<Integer> stack1;
+      private Stack<Integer> stack2;
+  
+      public MyQueue() {
+          stack1 = new Stack<>();
+          stack2 = new Stack<>();
+      }
+  
+      public void push(int x) {
+          stack1.push(x);
+      }
+  
+      public int pop() {
+          if (stack2.isEmpty()) {
+              while (!stack1.isEmpty()) {
+                  stack2.push(stack1.pop());
+              }
+          }
+          return stack2.pop();
+      }
+  
+      public int peek() {
+          if (stack2.isEmpty()) {
+              while (!stack1.isEmpty()) {
+                  stack2.push(stack1.pop());
+              }
+          }
+          return stack2.peek();
+      }
+  
+      public boolean empty() {
+          return stack1.isEmpty() && stack2.isEmpty();
+      }
+  }`,
+            explanation:
+              "Use two stacks. One for pushing elements, another for popping/peeking. Transfer elements between stacks as needed.",
+          },
+          {
+            id: 9,
+            title: "Valid Palindrome",
+            problem:
+              "Determine whether a given string is a palindrome, considering only alphanumeric characters and ignoring cases.",
+            code: `public boolean isPalindrome(String s) {
+      int left = 0;
+      int right = s.length() - 1;
+  
+      while (left < right) {
+          while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+              left++;
+          }
+          while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+              right--;
+          }
+          if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
+              return false;
+          }
+          left++;
+          right--;
+      }
+  
+      return true;
+  }`,
+            explanation:
+              "Use two-pointer approach. Skip non-alphanumeric characters and compare characters ignoring case.",
+          },
+          {
+            id: 10,
+            title: "Merge Sorted Array",
+            problem:
+              "Merge two sorted integer arrays `nums1` and `nums2` into a single sorted array in `nums1`.",
+            code: `public void merge(int[] nums1, int m, int[] nums2, int n) {
+      int p1 = m - 1; // Pointer for nums1
+      int p2 = n - 1; // Pointer for nums2
+      int p = m + n - 1; // Pointer for the merged array
+  
+      while (p2 >= 0) {
+          if (p1 >= 0 && nums1[p1] > nums2[p2]) {
+              nums1[p] = nums1[p1];
+              p1--;
+          } else {
+              nums1[p] = nums2[p2];
+              p2--;
+          }
+          p--;
+      }
+  }`,
+            explanation:
+              "Start from the end of both arrays. Compare and place the larger element at the end of nums1.",
+          },
+          {
+            id: 11,
+            title: "Remove Duplicates from Sorted Array",
+            problem:
+              "Remove duplicates from a sorted array in-place and return the number of unique elements.",
+            code: `public int removeDuplicates(int[] nums) {
+      if (nums.length == 0) {
+          return 0;
+      }
+  
+      int slow = 0;
+      for (int fast = 1; fast < nums.length; fast++) {
+          if (nums[slow] != nums[fast]) {
+              slow++;
+              nums[slow] = nums[fast];
+          }
+      }
+  
+      return slow + 1;
+  }`,
+            explanation:
+              "Use two pointers. Slow pointer tracks unique elements, fast pointer finds next unique element.",
+          },
+          {
+            id: 12,
+            title: "String to Integer (atoi)",
+            problem:
+              "Implement a function to convert a string to a 32-bit signed integer.",
+            code: `public int myAtoi(String s) {
+      s = s.trim();
+      if (s.isEmpty()) {
+          return 0;
+      }
+  
+      boolean isNegative = false;
+      if (s.charAt(0) == '-') {
+          isNegative = true;
+          s = s.substring(1);
+      } else if (s.charAt(0) == '+') {
+          s = s.substring(1);
+      }
+  
+      long result = 0;
+      for (char c : s.toCharArray()) {
+          if (!Character.isDigit(c)) {
+              break;
+          }
+          result = result * 10 + (c - '0');
+          if (result > Integer.MAX_VALUE) {
+              return isNegative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+          }
+      }
+  
+      return isNegative ? (int) -result : (int) result;
+  }`,
+            explanation:
+              "Handle whitespace, sign, and digit conversion. Check for integer overflow.",
+          },
+          {
+            id: 13,
+            title: "Longest Common Prefix",
+            problem:
+              "Find the longest common prefix string amongst an array of strings.",
+            code: `public String longestCommonPrefix(String[] strs) {
+      if (strs == null || strs.length == 0) {
+          return "";
+      }
+  
+      String prefix = strs[0];
+      for (int i = 1; i < strs.length; i++) {
+          while (!strs[i].startsWith(prefix)) {
+              prefix = prefix.substring(0, prefix.length() - 1);
+              if (prefix.isEmpty()) {
+                  return "";
+              }
+          }
+      }
+  
+      return prefix;
+  }`,
+            explanation:
+              "Start with first string as prefix. Progressively shorten prefix until it matches all strings.",
+          },
+          {
+            id: 14,
+            title: "Roman to Integer",
+            problem: "Convert a Roman numeral to an integer.",
+            code: `public int romanToInt(String s) {
+      Map<Character, Integer> romanMap = new HashMap<>();
+      romanMap.put('I', 1);
+      romanMap.put('V', 5);
+      romanMap.put('X', 10);
+      romanMap.put('L', 50);
+      romanMap.put('C', 100);
+      romanMap.put('D', 500);
+      romanMap.put('M', 1000);
+  
+      int result = 0;
+      int prevVal = 0;
+  
+      for (int i = s.length() - 1; i >= 0; i--) {
+          int currVal = romanMap.get(s.charAt(i));
+          if (currVal < prevVal) {
+              result -= currVal;
+          } else {
+              result += currVal;
+          }
+          prevVal = currVal;
+      }
+  
+      return result;
+  }`,
+            explanation:
+              "Iterate from right to left. Subtract if current value is less than previous value.",
+          },
+          {
+            id: 15,
+            title: "Container With Most Water",
+            problem:
+              "Find two lines that form a container with the maximum water.",
+            code: `public int maxArea(int[] height) {
+      int left = 0;
+      int right = height.length - 1;
+      int maxArea = 0;
+  
+      while (left < right) {
+          int area = Math.min(height[left], height[right]) * (right - left);
+          maxArea = Math.max(maxArea, area);
+  
+          if (height[left] < height[right]) {
+              left++;
+          } else {
+              right--;
+          }
+      }
+  
+      return maxArea;
+  }`,
+            explanation:
+              "Use two-pointer approach. Calculate area and move pointer with shorter height.",
+          },
+          {
+            id: 16,
+            title: "3Sum",
+            problem:
+              "Find all unique triplets in the array which gives the sum of zero.",
+            code: `public List<List<Integer>> threeSum(int[] nums) {
+      Arrays.sort(nums);
+      List<List<Integer>> result = new ArrayList<>();
+  
+      for (int i = 0; i < nums.length - 2; i++) {
+          if (i > 0 && nums[i] == nums[i - 1]) {
+              continue;
+          }
+          int left = i + 1;
+          int right = nums.length - 1;
+  
+          while (left < right) {
+              int sum = nums[i] + nums[left] + nums[right];
+              if (sum == 0) {
+                  result.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                  while (left < right && nums[left] == nums[left + 1]) {
+                      left++;
+                  }
+                  while (left < right && nums[right] == nums[right - 1]) {
+                      right--;
+                  }
+                  left++;
+                  right--;
+              } else if (sum < 0) {
+                  left++;
+              } else {
+                  right--;
+              }
+          }
+      }
+  
+      return result;
+  }`,
+            explanation:
+              "Sort the array. Use two-pointer technique to find triplets that sum to zero.",
+          },
+        ],
+        images: ["", ""],
+        buttons: [
+          {
+            text: "View Solutions",
+            link: "https://github.com/your-repo/java-leet-solutions",
+          },
+          {
+            text: "Practice Platform",
+            link: "https://leetcode.com/problemset/",
+          },
+          {
+            text: "Interview Prep",
+            link: "/interview-prep",
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Top 20 Python Leet Questions",
+        slug: "python-leetcode-questions",
         fullTitle: "Comprehensive Guide to Top 20 Java Leetcode Questions",
         description:
           "A comprehensive list of top 20 Java coding questions and answers.",

@@ -49,6 +49,37 @@ const ResourcePage = () => {
                           </p>
                         ))}
 
+                      {resource.questions && (
+                        <div className="p-4">
+                          <h1 className="text-2xl font-bold mb-4">
+                            LeetCode Interview Questions
+                          </h1>
+                          {resource.questions.map((question, index) => (
+                            <div
+                              key={index}
+                              className="mb-8 p-5 border border-white/40 rounded-2xl"
+                            >
+                              <h2 className="text-2xl font-semibold mb-4">
+                                {question.id}. <span className="">{question.title}</span>
+                              </h2>
+                              <p className="mb-3">
+                                <span className="font-semibold">Problem:</span>{" "}
+                                {question.problem}
+                              </p>
+                              <pre className="bg-strongBgColor/80 p-4 rounded mb-3">
+                                <code>{question.code}</code>
+                              </pre>
+                              <p>
+                                <span className="font-semibold">
+                                  Explanation:
+                                </span>{" "}
+                                {question.explanation}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
                       {resource.images && resource.images[1] && (
                         <img
                           src={resource.images[1]}
