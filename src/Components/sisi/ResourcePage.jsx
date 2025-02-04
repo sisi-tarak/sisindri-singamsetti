@@ -15,21 +15,35 @@ const ResourcePage = () => {
 
         return (
           <div className="w-full min-h-screen bg-backgroundBgColor">
-            <Container maxWidth="xl" className="mt-8 px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col sm:flex-row gap-4 w-full">
-                <div className="lg:w-[300px] w-full sm:w-0">
-                  <div
-                    className="h-32 lg:h-[600px] w-full bg-adsBgColor rounded-md 
-                                shadow-lg transition-all duration-300 hover:shadow-xl"
-                  ></div>
+            <Container maxWidth="xl" className="mt-8 px-2 sm:px-4 lg:px-8">
+              <div className="flex flex-col md:flex-row gap-y-4 md:gap-4 w-full">
+                <div className="block md:hidden xl:block md:w-[200px]  2xl:w-[300px] flex-shrink-0">
+                  <div className="h-32 w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
                 </div>
 
-                <div className="bg-footerBgColor w-full ">
+                <div className="bg-footerBgColor flex-grow-0">
                   {resource ? (
-                    <div className="flex flex-col py-8 px-6">
+                    <div className="flex flex-col px-2 py-2 md:py-8 md:px-6">
                       <h2 className="font-Montserrat text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl tracking-wide font-semibold">
                         {resource.fullTitle}
                       </h2>
+
+                      <p className="my-8 text-textColor/80 text-sm md:text-base">
+                        {resource.description}
+                      </p>
+
+                      <div className="flex flex-col md:flex-row gap-y-3 gap-x-5 mb-5 text-center">
+                        {resource.buttonsSet2 &&
+                          resource.buttonsSet2.map((buttonSet2, index) => (
+                            <Link
+                              key={index}
+                              to={buttonSet2.link}
+                              className="text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3"
+                            >
+                              {buttonSet2.text}
+                            </Link>
+                          ))}
+                      </div>
 
                       {resource.images && resource.images[0] && (
                         <img
@@ -50,31 +64,41 @@ const ResourcePage = () => {
                         ))}
 
                       {resource.questions && (
-                        <div className="p-4">
-                          <h1 className="text-2xl font-bold mb-4">
+                        <div className="p-2 md:p-4">
+                          <h1 className="text-xl md:text-2xl font-bold mb-4 tracking-wider text-textStrong">
                             LeetCode Interview Questions
                           </h1>
-                          {resource.questions.map((question, index) => (
+                          {resource.questions.map((question) => (
                             <div
-                              key={index}
-                              className="mb-8 p-5 border border-white/40 rounded-2xl"
+                              key={question.id}
+                              className="mb-8 p-2 md:p-5 border border-white/40 rounded-2xl"
                             >
-                              <h2 className="text-2xl font-semibold mb-4">
-                                {question.id}. <span className="">{question.title}</span>
+                              <h2 className="text-xl md:text-2xl font-semibold mb-4">
+                                {question.id}.{" "}
+                                <span className="">{question.title}</span>
                               </h2>
-                              <p className="mb-3">
-                                <span className="font-semibold">Problem:</span>{" "}
-                                {question.problem}
-                              </p>
-                              <pre className="bg-strongBgColor/80 p-4 rounded mb-3">
-                                <code>{question.code}</code>
+
+                              <div className="mb-4">
+                                <p className="text-sm md:text-base font-semibold">
+                                  Problem:
+                                </p>
+                                <p className="md:px-6 pt-2 text-sm md:text-base">
+                                  {question.problem}
+                                </p>
+                              </div>
+                              <pre className="bg-strongBgColor/60 p-4 rounded mb-4 max-w-full  whitespace-pre-wrap overflow-x-auto">
+                                <code className="block overflow-x-auto text-xs sm:text-sm md:text-base">
+                                  {question.code}
+                                </code>
                               </pre>
-                              <p>
-                                <span className="font-semibold">
+                              <div>
+                                <p className="font-semibold text-sm md:text-base">
                                   Explanation:
-                                </span>{" "}
-                                {question.explanation}
-                              </p>
+                                </p>
+                                <p className="md:px-6 pt-2 text-textColor/90 text-sm md:text-base">
+                                  {question.explanation}
+                                </p>
+                              </div>
                             </div>
                           ))}
                         </div>
@@ -88,13 +112,13 @@ const ResourcePage = () => {
                         />
                       )}
 
-                      <div className="flex gap-x-5">
+                      <div className="flex flex-col md:flex-row gap-y-3 gap-x-5 mb-5 text-center">
                         {resource.buttons &&
                           resource.buttons.map((button, index) => (
                             <Link
                               key={index}
                               to={button.link}
-                              className="text-base md:text-lg bg-secondaryTextColor/15 hover:bg-secondaryTextColor/5 rounded-lg text-textStrong transition-all duration-300 ease-in-out px-6 py-3"
+                              className="text-base bg-secondaryTextColor/15 hover:bg-secondaryTextColor/5 rounded-lg text-textStrong transition-all duration-300 ease-in-out px-6 py-3"
                             >
                               {button.text}
                             </Link>
@@ -113,11 +137,8 @@ const ResourcePage = () => {
                   )}
                 </div>
 
-                <div className="lg:w-[300px] w-full sm:w-0">
-                  <div
-                    className="h-32 lg:h-[600px] w-full bg-adsBgColor rounded-md 
-                                shadow-lg transition-all duration-300 hover:shadow-xl"
-                  ></div>
+                <div className="w-full md:w-[200px] 2xl:w-[300px] flex-shrink-0">
+                  <div className="h-dvh  w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
                 </div>
               </div>
             </Container>

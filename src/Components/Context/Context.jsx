@@ -327,13 +327,10 @@ export class Provider extends Component {
         id: 1,
         title: "Top 20 Java Leet Questions",
         slug: "java-leetcode-questions",
-        fullTitle: "Comprehensive Guide to Top 20 Java Leetcode Questions",
+        fullTitle: "Top 20 Java LeetCode Interview Questions & Solutions 🚀",
         description:
-          "A comprehensive list of top 20 Java coding questions and answers.",
-        paragraphs: [
-          "This guide covers the most frequently asked Java coding questions in technical interviews, focusing on problem-solving and algorithmic thinking.",
-          "Each question is carefully selected to represent different problem-solving paradigms and coding techniques used in real-world software development.",
-        ],
+          "Welcome to the Top 20 Java LeetCode Interview Questions! Whether you're prepping for coding interviews or looking to improve your problem-solving skills, this is a curated collection of the most essential LeetCode problems that you’ll encounter in interviews. Each problem is followed by a clear and efficient solution in Java, along with an explanation to ensure you understand the concepts behind it.",
+        paragraphs: [],
         questions: [
           {
             id: 1,
@@ -533,25 +530,25 @@ export class Provider extends Component {
             problem:
               "Determine whether a given string is a palindrome, considering only alphanumeric characters and ignoring cases.",
             code: `public boolean isPalindrome(String s) {
-      int left = 0;
-      int right = s.length() - 1;
-  
-      while (left < right) {
-          while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
-              left++;
-          }
-          while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
-              right--;
-          }
-          if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
-              return false;
-          }
+  int left = 0;
+  int right = s.length() - 1;
+
+  while (left < right) {
+      while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
           left++;
+      }
+      while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
           right--;
       }
-  
-      return true;
-  }`,
+      if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
+          return false;
+      }
+      left++;
+      right--;
+  }
+
+  return true;
+}`,
             explanation:
               "Use two-pointer approach. Skip non-alphanumeric characters and compare characters ignoring case.",
           },
@@ -761,8 +758,167 @@ export class Provider extends Component {
             explanation:
               "Sort the array. Use two-pointer technique to find triplets that sum to zero.",
           },
+
+          {
+            id: 17,
+            title: "Letter Combinations of a Phone Number",
+            problem:
+              "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.",
+            code: `import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class LetterCombinationsOfPhoneNumber {
+  public List<String> letterCombinations(String digits) {
+      if (digits.isEmpty()) {
+          return new ArrayList<>();
+      }
+
+      Map<Character, String> digitToLetters = new HashMap<>();
+      digitToLetters.put('2', "abc");
+      digitToLetters.put('3', "def");
+      digitToLetters.put('4', "ghi");
+      digitToLetters.put('5', "jkl");
+      digitToLetters.put('6', "mno");
+      digitToLetters.put('7', "pqrs");
+      digitToLetters.put('8', "tuv");
+      digitToLetters.put('9', "wxyz");
+
+      List<String> result = new ArrayList<>();
+      backtrack(digits, 0, new StringBuilder(), digitToLetters, result);
+      return result;
+  }
+
+  private void backtrack(String digits, int index, StringBuilder currentString, Map<Character, String> digitToLetters, List<String> result) {
+      if (index == digits.length()) {
+          result.add(currentString.toString());
+          return;
+      }
+
+      String letters = digitToLetters.get(digits.charAt(index));
+      for (char letter : letters.toCharArray()) {
+          currentString.append(letter);
+          backtrack(digits, index + 1, currentString, digitToLetters, result);
+          currentString.deleteCharAt(currentString.length() - 1);
+      }
+  }
+}`,
+            explanation:
+              "Create a HashMap to map digits to their corresponding letters. Use backtracking to explore all possible combinations. The backtrack function recursively explores each digit and adds its corresponding letters to the currentString. When the index reaches the end of the digits string, add the currentString to the result list.",
+          },
+          {
+            id: 18,
+            title: "Combination Sum",
+            problem:
+              "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the numbers in each combination add up to target. You may return the combinations in any order.",
+            code: `import java.util.ArrayList;
+import java.util.List;
+
+public class CombinationSum {
+  public List<List<Integer>> combinationSum(int[] candidates, int target) {
+      List<List<Integer>> result = new ArrayList<>();
+      backtrack(candidates, target, 0, new ArrayList<>(), result);
+      return result;
+  }
+
+  private void backtrack(int[] candidates, int target, int start, List<Integer> current, List<List<Integer>> result) {
+      if (target == 0) {
+          result.add(new ArrayList<>(current));
+          return;
+      }
+
+      if (target < 0) {
+          return;
+      }
+
+      for (int i = start; i < candidates.length; i++) {
+          current.add(candidates[i]);
+          backtrack(candidates, target - candidates[i], i, current, result);
+          current.remove(current.size() - 1);
+      }
+  }
+}`,
+            explanation:
+              "Use backtracking to explore all possible combinations. The backtrack function recursively explores each candidate: If the target reaches 0, add the current combination to the result. If the target becomes negative, stop the recursion. Include the current candidate in the current combination and recursively explore further. Backtrack by removing the current candidate from the current combination. Explore the next candidate without including the current one.",
+          },
+          {
+            id: 19,
+            title: "Permutations",
+            problem:
+              "Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.",
+            code: `import java.util.ArrayList;
+import java.util.List;
+
+public class Permutations {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        backtrack(nums, new ArrayList<>(), result);
+        return result;
+    }
+
+    private void backtrack(int[] nums, List<Integer> current, List<List<Integer>> result) {
+        if (current.size() == nums.length) {
+            result.add(new ArrayList<>(current));
+            return;
+        }
+
+        for (int num : nums) {
+            if (!current.contains(num)) {
+                current.add(num);
+                backtrack(nums, current, result);
+                current.remove(current.size() - 1);
+            }
+        }
+    }
+}`,
+            explanation:
+              "Use backtracking to explore all possible permutations. The backtrack function recursively explores each number in the nums array: If the current permutation has the same length as nums, add it to the result. If the num is not already in the current permutation, add it to the current permutation and recursively explore further. Backtrack by removing the num from the current permutation.",
+          },
+          {
+            id: 20,
+            title: "Subsets",
+            problem:
+              "Given an integer array nums, return all possible subsets (the power set). The solution must not contain duplicate subsets.",
+            code: `import java.util.ArrayList;
+import java.util.List;
+
+public class Subsets {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(new ArrayList<>());
+
+        for (int num : nums) {
+            int n = result.size();
+            for (int i = 0; i < n; i++) {
+                List<Integer> newSubset = new ArrayList<>(result.get(i));
+                newSubset.add(num);
+                result.add(newSubset);
+            }
+        }
+
+        return result;
+    }
+}`,
+            explanation:
+              "Start with an empty set (an empty list) in the result. Iterate through each number in nums: Create new subsets by adding the current num to each existing subset in the result. Add the new subsets to the result.",
+          },
         ],
         images: ["", ""],
+        buttonsSet2: [
+          {
+            text: "View Solutions",
+            link: "https://github.com/your-repo/java-leet-solutions",
+          },
+          {
+            text: "Practice Platform",
+            link: "https://leetcode.com/problemset/",
+          },
+          {
+            text: "Interview Prep",
+            link: "/interview-prep",
+          },
+        ],
         buttons: [
           {
             text: "View Solutions",
