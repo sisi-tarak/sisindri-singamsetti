@@ -908,29 +908,29 @@ public class Subsets {
         buttonsSet2: [
           {
             text: "View Solutions",
-            link: "https://github.com/your-repo/java-leet-solutions",
+            link: "https://github.com/sisi-tarak/Top-20-LeetCode-Questions.git",
           },
           {
             text: "Practice Platform",
             link: "https://leetcode.com/problemset/",
           },
           {
-            text: "Interview Prep",
-            link: "/interview-prep",
+            text: "Youtube",
+            link: "https://youtube.com/@sisi-tarakk/",
+          },
+          {
+            text: "LinkedIn",
+            link: "https://www.linkedin.com/in/sisi-tarak/",
           },
         ],
         buttons: [
           {
             text: "View Solutions",
-            link: "https://github.com/your-repo/java-leet-solutions",
+            link: "https://github.com/sisi-tarak/Top-20-LeetCode-Questions.git",
           },
           {
             text: "Practice Platform",
             link: "https://leetcode.com/problemset/",
-          },
-          {
-            text: "Interview Prep",
-            link: "/interview-prep",
           },
         ],
       },
