@@ -1,4 +1,4 @@
-import React, { useEffect, lazy } from "react";
+import React, { useEffect, lazy, useRef } from "react";
 import { Container } from "@mui/material";
 import "./index.css";
 import { Consumer } from "../Context/Context";
@@ -10,21 +10,24 @@ const SocialHandlers = lazy(() => import("./SocialHandlers"));
 import sisiImg from "./assets/sisi.png";
 
 const MainPage = () => {
+  const sectionsRef = {
+    intro: useRef(null),
+    roadmaps: useRef(null),
+    resources: useRef(null),
+  };
+
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 100;
-      const elementPosition = element.offsetTop;
-      window.scrollTo({
-        top: elementPosition - offset,
+    if (sectionsRef[sectionId]?.current) {
+      sectionsRef[sectionId].current.scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
     }
   };
 
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
-    if (hash) {
+    if (hash && sectionsRef[hash]?.current) {
       setTimeout(() => {
         scrollToSection(hash);
       }, 100);
@@ -51,7 +54,7 @@ const MainPage = () => {
                   <div className="h-48 md:h-dvh w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
                 </div>
 
-                <div className="flex bg-footerBgColor  flex-grow-0">
+                <div className="flex bg-footerBgColor flex-grow-0">
                   <div className="rounded-md p-4 sm:p-6 w-full">
                     <div className="flex flex-wrap justify-center sm:justify-start gap-3">
                       {buttonLabels.map((buttonLabel) => (
@@ -67,7 +70,7 @@ const MainPage = () => {
                       ))}
                     </div>
 
-                    <div id="intro" className="mt-10">
+                    <div id="intro" ref={sectionsRef.intro} className="mt-10">
                       <h1 className="text-2xl md:text-4xl tracking-wide font-semibold mt-16">
                         👋 Hii Everyone!!
                       </h1>
@@ -85,11 +88,11 @@ const MainPage = () => {
                       </div>
                     </div>
 
-                    <div id="roadmaps">
+                    <div id="roadmaps" ref={sectionsRef.roadmaps}>
                       <Roadmap />
                     </div>
 
-                    <div id="resources">
+                    <div id="resources" ref={sectionsRef.resources}>
                       <Resources />
                     </div>
                   </div>

@@ -8,7 +8,7 @@ const Roadmap = () => {
       {(value) => {
         const { roadmaps } = value;
         return (
-          <div className="font-Montserrat" id="roadmaps">
+          <section className="font-Montserrat" id="roadmaps">
             <h1 className="text-xl md:text-2xl tracking-wide font-semibold">
               Roadmaps
             </h1>
@@ -23,7 +23,7 @@ const Roadmap = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
         );
       }}
     </Consumer>
