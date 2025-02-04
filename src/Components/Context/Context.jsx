@@ -1035,10 +1035,6 @@ public class Subsets {
             text: "Youtube",
             link: "https://youtube.com/@sisi-tarakk/",
           },
-          {
-            text: "LinkedIn",
-            link: "https://www.linkedin.com/in/sisitarak/",
-          },
         ],
         buttons: [
           {
@@ -1055,26 +1051,490 @@ public class Subsets {
         id: 2,
         title: "Top 20 Python Leet Questions",
         slug: "python-leetcode-questions",
-        fullTitle: "Comprehensive Guide to Top 20 Java Leetcode Questions",
+        fullTitle: "Top 20 Python LeetCode Interview Questions & Solutions 🚀",
         description:
-          "A comprehensive list of top 20 Java coding questions and answers.",
-        paragraphs: [
-          "This guide covers the most frequently asked Java coding questions in technical interviews, focusing on problem-solving and algorithmic thinking.",
-          "Each question is carefully selected to represent different problem-solving paradigms and coding techniques used in real-world software development.",
+          "Welcome to the Top 20 Python LeetCode Interview Questions! Whether you're prepping for coding interviews or looking to improve your problem-solving skills, this is a curated collection of the most essential LeetCode problems that you’ll encounter in interviews. Each problem is followed by a clear and efficient solution in Python, along with an explanation to ensure you understand the concepts behind it.",
+        paragraphs: [],
+        questions: [
+          {
+            id: 1,
+            title: "Two Sum",
+            problem:
+              "Given an array of integers `nums` and an integer `target`, return *indices* of the two numbers such that they add up to `target`.",
+            code: `def two_sum(nums, target):
+  seen = {}
+  for i, num in enumerate(nums):
+      complement = target - num
+      if complement in seen:
+          return [seen[complement], i]
+      seen[num] = i
+return []`,
+            explanation:
+              "We use a dictionary (`seen`) to store the numbers we have encountered and their corresponding indices. For each number `num` in the list, calculate the `complement` needed to reach the `target`. If the `complement` is already in the `seen` dictionary, we have found the pair. Return the indices.",
+          },
+          {
+            id: 2,
+            title: "Reverse Linked List",
+            problem: "Reverse a singly linked list.",
+            code: `def reverse_list(head):
+  prev = None
+  curr = head
+  while curr:
+      next_node = curr.next
+      curr.next = prev
+      prev = curr
+      curr = next_node
+  return prev`,
+            explanation:
+              "Initialize `prev` to `None` and `curr` to the `head` of the list. Iterate through the list: store the `next` node of the current node, reverse the link of the current node, move `prev` to the current node, and move `curr` to the `next_node`.",
+          },
+          {
+            id: 3,
+            title: "Valid Parentheses",
+            problem:
+              "Determine if a string containing only parentheses `()`, `{}`, `[]` is valid.",
+            code: `def is_valid(s):
+  stack = []
+  mapping = {')': '(', '}': '{', ']': '['}
+  for char in s:
+      if char in mapping:
+          if not stack or stack.pop() != mapping[char]:
+              return False
+      else:
+          stack.append(char)
+  return not stack`,
+            explanation:
+              "Use a stack to keep track of opening parentheses. If a closing parenthesis is encountered, check if the stack is empty or the top of the stack doesn't match the corresponding opening parenthesis. After iteration, the stack should be empty if all parentheses are valid.",
+          },
+          {
+            id: 4,
+            title: "Merge Two Sorted Lists",
+            problem: "Merge two sorted linked lists into one sorted list.",
+            code: `def merge_two_lists(list1, list2):
+  dummy = ListNode()
+  tail = dummy
+
+  while list1 and list2:
+      if list1.val <= list2.val:
+          tail.next = list1
+          list1 = list1.next
+      else:
+          tail.next = list2
+          list2 = list2.next
+      tail = tail.next
+
+  if list1:
+      tail.next = list1
+  elif list2:
+      tail.next = list2
+
+  return dummy.next`,
+            explanation:
+              "Create a dummy node to simplify the logic. Initialize a `tail` pointer to the dummy node. Iterate through both lists, comparing the values and appending the node with the smaller value to the `tail`. If one list becomes empty, append the remaining nodes of the other list.",
+          },
+          {
+            id: 5,
+            title: "Longest Substring Without Repeating Characters",
+            problem:
+              "Find the length of the longest substring without repeating characters.",
+            code: `def length_of_longest_substring(s):
+  char_index = {}
+  max_length = 0
+  start = 0
+
+  for end in range(len(s)):
+      if s[end] in char_index and char_index[s[end]] >= start:
+          start = char_index[s[end]] + 1
+      char_index[s[end]] = end
+      max_length = max(max_length, end - start + 1)
+
+  return max_length`,
+            explanation:
+              "Use a sliding window approach. Maintain a dictionary `char_index` to store the last seen index of each character. If the current character is already in the window, update the start of the window. Update the max length of the substring without repeating characters.",
+          },
+          {
+            id: 6,
+            title: "Climbing Stairs",
+            problem:
+              "You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+            code: `def climb_stairs(n):
+  if n <= 1:
+      return 1
+  dp = [0] * (n + 1)
+  dp[0] = 1
+  dp[1] = 1
+  for i in range(2, n + 1):
+      dp[i] = dp[i - 1] + dp[i - 2]
+  return dp[n]`,
+            explanation:
+              "Use dynamic programming to solve the problem. Create a `dp` array to store the number of ways to reach each step. Initialize base cases for 0 and 1 steps. For each subsequent step, the number of ways is the sum of ways to reach the previous two steps.",
+          },
+          {
+            id: 7,
+            title: "Binary Search",
+            problem:
+              "Given a sorted array of integers `nums` and an integer `target`, write an efficient algorithm to search for `target` in `nums`.",
+            code: `def binary_search(nums, target):
+  left = 0
+  right = len(nums) - 1
+
+  while left <= right:
+      mid = (left + right) // 2
+      if nums[mid] == target:
+          return mid
+      elif nums[mid] < target:
+          left = mid + 1
+      else:
+          right = mid - 1
+
+  return -1`,
+            explanation:
+              "Initialize `left` and `right` pointers to the beginning and end of the array. Calculate the `mid` index and compare it with the target. Update `left` or `right` based on the comparison. If the target is not found, return -1.",
+          },
+          {
+            id: 8,
+            title: "Implement Queue using Stacks",
+            problem:
+              "Implement a first-in, first-out (FIFO) queue using only two stacks.",
+            code: `class MyQueue:
+  def __init__(self):
+      self.stack1 = []
+      self.stack2 = []
+
+  def push(self, x: int) -> None:
+      self.stack1.append(x)
+
+  def pop(self) -> int:
+      if not self.stack2:
+          while self.stack1:
+              self.stack2.append(self.stack1.pop())
+      return self.stack2.pop()
+
+  def peek(self) -> int:
+      if not self.stack2:
+          while self.stack1:
+              self.stack2.append(self.stack1.pop())
+      return self.stack2[-1]
+
+  def empty(self) -> bool:
+      return not self.stack1 and not self.stack2`,
+            explanation:
+              "Use two stacks: `stack1` for push operations and `stack2` for pop and peek operations. When pop or peek is called, transfer elements from `stack1` to `stack2` if `stack2` is empty. The `empty` method checks if both stacks are empty.",
+          },
+          {
+            id: 9,
+            title: "Valid Palindrome",
+            problem: "Determine whether a given string is a palindrome.",
+            code: `def is_palindrome(s):
+  left = 0
+  right = len(s) - 1
+
+  while left < right:
+      while left < right and not alphanum(s[left]):
+          left += 1
+      while left < right and not alphanum(s[right]):
+          right -= 1
+      if s[left].lower() != s[right].lower():
+          return False
+      left += 1
+      right -= 1
+
+  return True
+
+def alphanum(c):
+  return (ord('a') <= ord(c) <= ord('z') or
+          ord('A') <= ord(c) <= ord('Z') or
+          ord('0') <= ord(c) <= ord('9'))`,
+            explanation:
+              "Use two pointers, `left` and `right`, starting from the beginning and end of the string. Skip non-alphanumeric characters. Compare characters (ignoring case). If any mismatch is found, return False. If the pointers meet without finding a mismatch, return True.",
+          },
+          {
+            id: 10,
+            title: "Merge Sorted Array",
+            problem:
+              "Given two sorted integer arrays `nums1` and `nums2`, merge `nums2` into `nums1` in such a way that it becomes a single, sorted array.",
+            code: `def merge(nums1, m, nums2, n):
+  p1 = m - 1
+  p2 = n - 1
+  p = m + n - 1
+
+  while p2 >= 0:
+      if p1 >= 0 and nums1[p1] > nums2[p2]:
+          nums1[p] = nums1[p1]
+          p1 -= 1
+      else:
+          nums1[p] = nums2[p2]
+          p2 -= 1
+      p -= 1`,
+            explanation:
+              "Use three pointers: `p1` for `nums1`, `p2` for `nums2`, and `p` for the merged array. Compare elements from the end of both arrays and place the larger element at the end of `nums1`. Continue until all elements from `nums2` are merged.",
+          },
+          {
+            id: 11,
+            title: "Remove Duplicates from Sorted Array",
+            problem:
+              "Given an integer array `nums` sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.",
+            code: `def remove_duplicates(nums):
+    if not nums:
+        return 0
+
+    slow = 0
+    for fast in range(1, len(nums)):
+        if nums[slow] != nums[fast]:
+            slow += 1
+            nums[slow] = nums[fast]
+
+    return slow + 1`,
+            explanation:
+              "Use two pointers, `slow` and `fast`. When a different element is found, increment `slow` and replace the element at `slow` with the different element. Return the length of the unique array.",
+          },
+          {
+            id: 12,
+            title: "String to Integer (atoi)",
+            problem:
+              "Implement the `myAtoi(string s)` function, which converts a string to an integer.",
+            code: `def my_atoi(s):
+    s = s.strip()
+    if not s:
+        return 0
+
+    sign = 1
+    if s[0] == '-':
+        sign = -1
+        s = s[1:]
+    elif s[0] == '+':
+        s = s[1:]
+
+    result = 0
+    for char in s:
+        if not char.isdigit():
+            break
+        result = result * 10 + int(char)
+        if result > 2**31 - 1:
+            return 2**31 - 1
+        if result < -2**31:
+            return -2**31
+
+    return result * sign`,
+            explanation:
+              "Remove whitespaces, handle the sign, iterate through characters. Convert digits to integer, check for overflow, and handle non-digit characters by breaking the loop.",
+          },
+          {
+            id: 13,
+            title: "Longest Common Prefix",
+            problem:
+              "Write a function to find the longest common prefix string amongst an array of strings.",
+            code: `def longest_common_prefix(strs):
+  if not strs:
+      return ""
+
+  prefix = strs[0]
+  for i in range(1, len(strs)):
+      while not strs[i].startswith(prefix):
+          prefix = prefix[:-1]
+          if not prefix:
+              return ""
+
+  return prefix`,
+            explanation:
+              "Initialize `prefix` to the first string. Iterate through the remaining strings, shortening the `prefix` until it is a prefix of all strings. Return the final `prefix`.",
+          },
+          {
+            id: 14,
+            title: "Roman to Integer",
+            problem: "Convert a Roman numeral to an integer.",
+            code: `def roman_to_integer(s):
+roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+result = 0
+prev_val = 0
+
+for char in s[::-1]:
+    curr_val = roman_map[char]
+    if curr_val < prev_val:
+        result -= curr_val
+    else:
+        result += curr_val
+    prev_val = curr_val
+
+return result`,
+            explanation:
+              "Iterate through the Roman numeral in reverse. If the current value is less than the previous value, subtract it. Otherwise, add it. This handles cases like IV (4) and IX (9).",
+          },
+          {
+            id: 15,
+            title: "Container With Most Water",
+            problem:
+              "Find two lines that together with the x-axis form a container, such that the container contains the most water.",
+            code: `def max_area(height):
+  left = 0
+  right = len(height) - 1
+  max_area = 0
+
+  while left < right:
+      area = min(height[left], height[right]) * (right - left)
+      max_area = max(max_area, area)
+
+      if height[left] < height[right]:
+          left += 1
+      else:
+          right -= 1
+
+  return max_area`,
+            explanation:
+              "Use two pointers, `left` and `right`. Calculate the area between the lines, update the max area. Move the pointer with the shorter height inward to potentially increase the area.",
+          },
+          {
+            id: 16,
+            title: "3Sum",
+            problem:
+              "Return all unique triplets in the array that sum up to zero.",
+            code: `def three_sum(nums):
+  nums.sort()
+  result = []
+
+  for i in range(len(nums) - 2):
+      if i > 0 and nums[i] == nums[i - 1]:
+          continue
+      left = i + 1
+      right = len(nums) - 1
+
+      while left < right:
+          sum_three = nums[i] + nums[left] + nums[right]
+          if sum_three == 0:
+              result.append([nums[i], nums[left], nums[right]])
+              while left < right and nums[left] == nums[left + 1]:
+                  left += 1
+              while left < right and nums[right] == nums[right - 1]:
+                  right -= 1
+              left += 1
+              right -= 1
+          elif sum_three < 0:
+              left += 1
+          else:
+              right -= 1
+
+  return result`,
+            explanation:
+              "Sort the array. Use three pointers: one fixed, two moving. Skip duplicates to avoid repeat triplets. Adjust pointers based on the sum.",
+          },
+          {
+            id: 17,
+            title: "Letter Combinations of a Phone Number",
+            problem:
+              "Given a string containing digits from 2-9, return all possible letter combinations that the number could represent.",
+            code: `def letter_combinations(digits):
+  if not digits:
+      return []
+
+  digit_to_letters = {
+      '2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl',
+      '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'
+  }
+
+  def backtrack(index, current_string):
+      if index == len(digits):
+          combinations.append(current_string)
+          return
+
+      for letter in digit_to_letters[digits[index]]:
+          backtrack(index + 1, current_string + letter)
+
+  combinations = []
+  backtrack(0, '')
+  return combinations`,
+            explanation:
+              "Use backtracking to generate all combinations. For each digit, iterate through its corresponding letters and recursively build combinations.",
+          },
+          {
+            id: 18,
+            title: "Combination Sum",
+            problem:
+              "Find all unique combinations of candidates that sum up to the target.",
+            code: `def combination_sum(candidates, target):
+  result = []
+
+  def backtrack(index, current, total):
+      if total == target:
+          result.append(list(current))
+          return
+
+      if total > target or index >= len(candidates):
+          return
+
+      current.append(candidates[index])
+      backtrack(index, current, total + candidates[index])
+      current.pop()
+      backtrack(index + 1, current, total)
+
+  backtrack(0, [], 0)
+  return result`,
+            explanation:
+              "Use backtracking to explore combinations. For each candidate, decide to include it or move to the next candidate. Track the current sum and backtrack when needed.",
+          },
+          {
+            id: 19,
+            title: "Permutations",
+            problem:
+              "Return all possible permutations of an array of distinct integers.",
+            code: `def permute(nums):
+  result = []
+
+  def backtrack(current_permutation):
+      if len(current_permutation) == len(nums):
+          result.append(list(current_permutation))
+          return
+
+      for num in nums:
+          if num not in current_permutation:
+              current_permutation.append(num)
+              backtrack(current_permutation)
+              current_permutation.pop()
+
+  backtrack([])
+  return result`,
+            explanation:
+              "Use backtracking to generate all permutations. For each number, add it to the current permutation if not already present, recursively explore, then backtrack.",
+          },
+          {
+            id: 20,
+            title: "Subsets",
+            problem:
+              "Return all possible subsets (the power set) of an array of distinct integers.",
+            code: `def subsets(nums):
+  result = [[]]
+
+  for num in nums:
+      new_subsets = [subset + [num] for subset in result]
+      result.extend(new_subsets)
+
+  return result`,
+            explanation:
+              "Start with an empty subset. For each number, create new subsets by adding the number to existing subsets. Extend the result with these new subsets.",
+          },
         ],
-        images: ["/path/to/image1.jpg", "/path/to/image2.jpg"],
-        buttons: [
+        images: ["", ""],
+        buttonsSet2: [
           {
             text: "View Solutions",
-            link: "https://github.com/your-repo/java-leet-solutions",
+            link: "https://github.com/sisi-tarak/Top-20-LeetCode-Questions.git",
           },
           {
             text: "Practice Platform",
             link: "https://leetcode.com/problemset/",
           },
           {
-            text: "Interview Prep",
-            link: "/interview-prep",
+            text: "Youtube",
+            link: "https://youtube.com/@sisi-tarakk/",
+          },
+        ],
+        buttons: [
+          {
+            text: "View Solutions",
+            link: "https://github.com/sisi-tarak/Top-20-LeetCode-Questions.git",
+          },
+          {
+            text: "Practice Platform",
+            link: "https://leetcode.com/problemset/",
           },
         ],
       },

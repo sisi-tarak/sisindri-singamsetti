@@ -38,7 +38,7 @@ const ResourcePage = () => {
                             <Link
                               key={index}
                               to={buttonSet2.link}
-                              className="text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-5 py-3 self-center h-full w-full"
+                              className="text-sm md:text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full font-medium"
                             >
                               {buttonSet2.text}
                             </Link>
@@ -118,7 +118,7 @@ const ResourcePage = () => {
                             <Link
                               key={index}
                               to={button.link}
-                              className="text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full"
+                              className="text-sm md:text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full font-medium"
                             >
                               {button.text}
                             </Link>

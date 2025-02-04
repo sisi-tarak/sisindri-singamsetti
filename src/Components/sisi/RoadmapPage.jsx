@@ -36,14 +36,14 @@ const RoadmapPage = () => {
                           </p>
 
                           <div className="flex flex-col md:flex-row justify-center mx-auto gap-y-3 gap-x-5 mb-5 text-center w-full xs:w-[80%] sm:w-[60%] md:w-full">
-                            {roadmap.buttons && roadmap.buttons[0] && (
+                            {roadmap.buttonsSet2 && roadmap.buttonsSet2[0] && (
                               <a
                                 key={0}
-                                href={roadmap.buttons[0].src}
-                                className="text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full"
+                                href={roadmap.buttonsSet2[0].src}
+                                className="text-sm md:text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full font-medium"
                                 download
                               >
-                                {roadmap.buttons[0].text}
+                                {roadmap.buttonsSet2[0].text}
                               </a>
                             )}
                             {roadmap.buttonsSet2 &&
@@ -53,7 +53,7 @@ const RoadmapPage = () => {
                                   <Link
                                     key={index}
                                     to={buttonSet2.link}
-                                    className="text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full"
+                                    className="text-sm md:text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full font-medium"
                                     target="_blank"
                                   >
                                     {buttonSet2.text}
@@ -148,7 +148,7 @@ const RoadmapPage = () => {
                               <a
                                 key={0}
                                 href={roadmap.buttons[0].src}
-                                className="text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full"
+                                className="text-sm md:text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full font-medium"
                                 download
                               >
                                 {roadmap.buttons[0].text}
@@ -158,7 +158,7 @@ const RoadmapPage = () => {
                               <Link
                                 key={roadmap.buttons[1].id}
                                 to={roadmap.buttons[1].link}
-                                className="text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full"
+                                className="text-sm md:text-base bg-strongBgColor hover:bg-strongBgColor/20 rounded-lg text-textStrong hover:text-textColor transition-all duration-300 ease-in-out px-6 py-3 self-center h-full w-full font-medium"
                                 target="_blank"
                               >
                                 {roadmap.buttons[1].text}
