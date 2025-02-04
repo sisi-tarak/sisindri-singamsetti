@@ -16,7 +16,7 @@ const Roadmap = () => {
               {roadmaps.map((roadmap) => (
                 <Link
                   key={roadmap.id}
-                  to={roadmap.link}
+                  to={`/sisi/roadmap/${roadmap.slug}`}
                   className="text-base md:text-lg hover:bg-secondaryTextColor/10 rounded-lg hover:text-textStrong transition-all duration-300 ease-in-out px-6 py-3"
                 >
                   {roadmap.title}

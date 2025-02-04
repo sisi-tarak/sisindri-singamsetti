@@ -5,6 +5,8 @@ import Project2 from "../../assets/Projects/02.png";
 import Project3 from "../../assets/Projects/03.png";
 import Project4 from "../../assets/Projects/04.png";
 
+import frontendRoadmap from "../../assets/Resources/Frontend-Roadmap-PDF.pdf";
+
 const Context = React.createContext();
 
 export class Provider extends Component {
@@ -302,23 +304,138 @@ export class Provider extends Component {
       {
         id: 1,
         title: "Front-end Roadmap",
+        slug: "front-end-roadmap",
         description:
-          "Discover the best practices for building a stunning front-end application.",
-        link: "#",
-      },
-      {
-        id: 2,
-        title: "Back-end Roadmap",
-        description:
-          "Learn how to build scalable and maintainable back-end applications.",
-        link: "#",
-      },
-      {
-        id: 3,
-        title: "Mobile App Roadmap",
-        description:
-          "Learn how to create cross-platform mobile apps using modern technologies.",
-        link: "#",
+          "A clear step-by-step guide to becoming a front-end developer, including concepts, project ideas, and interview tips.",
+
+        concepts: {
+          html: [
+            { topic: "Basic tags and attributes" },
+            { topic: "Semantic HTML" },
+            { topic: "Forms and input types" },
+            { topic: "Accessibility", details: ["ARIA roles", "alt text"] },
+          ],
+          css: [
+            { topic: "Selectors and specificity" },
+            { topic: "Box model", details: ["Margin", "Padding", "Border"] },
+            { topic: "Layout", details: ["Flexbox", "Grid"] },
+            { topic: "Responsive design", details: ["Media queries"] },
+            { topic: "Animations and transitions" },
+          ],
+          javascript: [
+            { topic: "Variables and Data Types" },
+            { topic: "Functions and Scope" },
+            { topic: "DOM Manipulation" },
+            {
+              topic: "Fetch API",
+              details: ["AJAX", "Promises", "async/await"],
+            },
+            {
+              topic: "ES6+ Features",
+              details: ["Arrow functions", "Destructuring"],
+            },
+          ],
+          react: [
+            { topic: "Components", details: ["Functional", "Class-based"] },
+            { topic: "Props and State" },
+            {
+              topic: "Hooks",
+              details: ["useState", "useEffect", "useContext"],
+            },
+            { topic: "Routing", details: ["React Router"] },
+            { topic: "State Management", details: ["Context API", "Redux"] },
+          ],
+        },
+        projects: {
+          beginner: [
+            { name: "Personal Portfolio", stack: ["HTML", "CSS"] },
+            { name: "To-Do List App", stack: ["JavaScript"] },
+            { name: "Simple Calculator", stack: ["JavaScript"] },
+            { name: "Responsive Landing Page", stack: ["HTML", "CSS"] },
+          ],
+          intermediate: [
+            { name: "Weather App", stack: ["React", "API integration"] },
+            { name: "Blog Website", stack: ["React", "React Router"] },
+            {
+              name: "E-commerce Product Page",
+              stack: ["React", "Tailwind CSS"],
+            },
+            { name: "Quiz App", stack: ["JavaScript", "React"] },
+          ],
+          advanced: [
+            { name: "Full-Stack Blog", stack: ["Next.js", "API routes"] },
+            { name: "Task Manager App", stack: ["React Native"] },
+            {
+              name: "Social Media Dashboard",
+              stack: ["React", "Redux", "Jest"],
+            },
+            { name: "Real-Time Chat App", stack: ["React", "WebSockets"] },
+          ],
+        },
+        interviewTips: [
+          {
+            tip: "Prepare for technical questions on HTML, CSS, and JavaScript.",
+          },
+          { tip: "Showcase your portfolio and explain your projects." },
+          { tip: "Practice problem-solving and coding challenges." },
+          { tip: "Understand browser mechanics and performance optimization." },
+          { tip: "Ask about the company’s tech stack and team structure." },
+          {
+            tip: "Be honest about what you don’t know and show willingness to learn.",
+          },
+        ],
+        finalTips: [
+          {
+            title: "Consistency is Key",
+            description: "Dedicate time daily to learning and practicing.",
+          },
+          {
+            title: "Build Projects",
+            description:
+              "Apply what you learn by building real-world projects.",
+          },
+          {
+            title: "Stay Updated",
+            description:
+              "Follow blogs, YouTube channels, and forums to stay updated with the latest trends.",
+          },
+          {
+            title: "Network",
+            description:
+              "Join developer communities on LinkedIn, Twitter, or Discord to connect with others.",
+          },
+        ],
+        buttonsSet2: [
+          {
+            id: 1,
+            text: "Download Roadmap",
+            src: frontendRoadmap,
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Roadmap",
+            link: "https://github.com/sisi-tarak/frontend-roadmap.git",
+          },
+          {
+            id: 3,
+            text: "Youtube",
+            link: "https://youtube.com/@sisi-tarakk/",
+          },
+        ],
+        buttons: [
+          {
+            id: 1,
+            text: "Download Roadmap",
+            src: frontendRoadmap,
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Roadmap",
+            link: "https://github.com/sisi-tarak/frontend-roadmap.git",
+          },
+        ],
       },
     ],
 
@@ -920,7 +1037,7 @@ public class Subsets {
           },
           {
             text: "LinkedIn",
-            link: "https://www.linkedin.com/in/sisi-tarak/",
+            link: "https://www.linkedin.com/in/sisitarak/",
           },
         ],
         buttons: [

@@ -7,6 +7,7 @@ import { Provider } from "./Components/Context/Context";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import ResourcePage from "./Components/sisi/ResourcePage";
 import MainPage from "./Components/sisi/MainPage";
+import RoadmapPage from "./Components/sisi/RoadmapPage";
 
 const HomePage = lazy(() => import("./Components/HomePage/HomePage"));
 const About = lazy(() => import("./Components/About/About"));
@@ -68,6 +69,7 @@ const App = () => {
             <Route path="/resume" element={<WrappedResume />} />
             <Route path="/downside" element={<WrappedDownSide />} />
             <Route path="/sisi" element={<MainPage />} />
+            <Route path="/sisi/roadmap/:slug" element={<RoadmapPage />} />
             <Route path="/sisi/resource/:slug" element={<ResourcePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
