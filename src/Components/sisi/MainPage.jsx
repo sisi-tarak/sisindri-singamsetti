@@ -41,20 +41,17 @@ const MainPage = () => {
               <img
                 src={sisiImg}
                 alt="sisi"
-                className="w-auto max-h-[560px] md:h-full object-cover rounded-2xl transform scale-90"
+                className="w-full aspect-video md:aspect-auto max-h-[560px] md:h-full object-cover rounded-2xl transform scale-100"
               />
             </div>
 
-            <Container maxWidth="xl" className="mt-8 px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col sm:flex-row gap-4 w-full">
-                <div className="lg:w-[300px] w-full sm:w-0">
-                  <div
-                    className="h-32 lg:h-[600px] w-full bg-adsBgColor rounded-md 
-                                shadow-lg transition-all duration-300 hover:shadow-xl"
-                  ></div>
+            <Container maxWidth="xl" className="mt-8 px-2 sm:px-6 lg:px-8">
+              <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4 w-full">
+                <div className="block md:hidden xl:block md:w-[200px]  2xl:w-[300px] flex-shrink-0">
+                  <div className="h-48 md:h-dvh w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
                 </div>
 
-                <div className="flex bg-footerBgColor w-full sm:w-4/6 md:w-full">
+                <div className="flex bg-footerBgColor  flex-grow-0">
                   <div className="rounded-md p-4 sm:p-6 w-full">
                     <div className="flex flex-wrap justify-center sm:justify-start gap-3">
                       {buttonLabels.map((buttonLabel) => (
@@ -98,11 +95,8 @@ const MainPage = () => {
                   </div>
                 </div>
 
-                <div className="lg:w-[300px] w-full sm:w-[35%] md:w-[50%]">
-                  <div
-                    className="h-32 lg:h-[600px] bg-adsBgColor rounded-md 
-                                shadow-lg transition-all duration-300 hover:shadow-xl"
-                  ></div>
+                <div className="w-full md:w-[200px] mb-4 md:mb-0  2xl:w-[300px] flex-shrink-0">
+                  <div className="h-48 md:h-dvh w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
                 </div>
               </div>
             </Container>
