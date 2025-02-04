@@ -177,18 +177,17 @@ export class Provider extends Component {
         subtitle: "Intel Core i5-1235U",
         description:
           "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.69kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Intel Iris Xe Graphics, HD Camera, Backlit Keyboard, fy5009tu",
-        image:
-          "https://m.media-amazon.com/images/I/71p8u7Upw1L._SX679_.jpg",
+        image: "https://m.media-amazon.com/images/I/71p8u7Upw1L._SX679_.jpg",
         link: "https://amzn.to/4gqIGyk",
       },
       {
         id: 4,
-        title: "HP 15, 13th Gen",
-        subtitle: "Intel Core i5-1334U",
+        title: "2022 Apple MacBook",
+        subtitle: "Air Laptop with M2 chip",
         description:
-          "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Space Gray",
-        image: "https://m.media-amazon.com/images/I/71r8h9mLzHL._SX679_.jpg",
-        link: "https://amzn.to/4gYURmG",
+          "13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Silver",
+        image: "https://m.media-amazon.com/images/I/71eXNIDUGjL._SX679_.jpg",
+        link: "https://amzn.to/3Q83WOw",
       },
       {
         id: 5,
