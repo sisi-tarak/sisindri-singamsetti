@@ -18,15 +18,15 @@ const TopPicks = () => {
               {topPicks.map((topPick) => (
                 <Fade blur={true}>
                   <div
-                    className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out"
+                    className="opacity-90 hover:opacity-100 transition-all duration-500 ease-in-out h-full"
                     key={topPick.id}
                   >
                     <Link to={topPick.link} target="_blank">
                       <div className="h-100 flex flex-col justify-center items-center rounded-lg hover:bg-opacity-50 transition-all duration-500 ease-in-out text-center">
                         <img
                           src={topPick.image}
-                          alt="HP 15, 13th Gen Intel Core i5-1334U, 16GB DDR4, 512GB SSD"
-                          className="rounded-lg"
+                          alt={topPick.title}
+                          className="rounded-lg h-full"
                         />
                       </div>
                     </Link>

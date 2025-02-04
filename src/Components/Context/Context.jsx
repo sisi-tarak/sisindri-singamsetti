@@ -158,27 +158,28 @@ export class Provider extends Component {
         title: "HP 15, 13th Gen",
         subtitle: "Intel Core i5-1334U",
         description:
-          "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.59kg), Anti-glare, 15.6-inch(39.6cm) FHD Laptop, Intel Iris Xe Graphics, 1080p FHD camera, Backlit KB, fd0316TU",
-        image: "https://m.media-amazon.com/images/I/71ALJrxmmDL._SX679_.jpg",
-        link: "https://amzn.to/404LeMr",
+          "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.59kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Iris Xe Graphics, FHD Camera, Backlit KB, fd0316TU/fd0315TU",
+        image: "https://m.media-amazon.com/images/I/71J+OBadJCL._SX679_.jpg",
+        link: "https://amzn.to/3CCEXjq",
       },
       {
         id: 2,
-        title: "Dell Inspiron, 13th Gen",
-        subtitle: "Intel Core i5-1334U",
+        title: "Lenovo IdeaPad Slim 5 12th Gen",
+        subtitle: "Intel Core i5 12450H",
         description:
-          "16GB, 512GB SSD, 39.62cm (15.6″) FHD 120Hz 250 nits, Backlit KBWindows 11 + Mso'21 & 15 Month McAfee, Silver, Thin & Light-1.62kg",
-        image: "https://m.media-amazon.com/images/I/71mFAMHkWyL._SX679_.jpg",
-        link: "https://amzn.to/4h5UkzB",
+          "14-inch(35.5cm) WUXGA+ IPS Laptop (16GB/512GB SSD/Win 11/Office 2021/Backlit KB/FHD Camera/Alexa/3 Month Game Pass/Cloud Grey/1.46Kg), 83BF000UIN",
+        image: "https://m.media-amazon.com/images/I/61UjxQh+aYL._SX679_.jpg",
+        link: "https://amzn.to/4jMEcoS",
       },
       {
         id: 3,
-        title: "Dell Inspiron, 12th Gen",
+        title: "HP 15, 12th Gen",
         subtitle: "Intel Core i5-1235U",
         description:
-          "8GB, 512GB SSD, 39.62cm (15.6″) FHD Display- 3 Side Narrow Border, Win 11 + MSO'21, 2 Tuned Speakers, Black, Thin & Light-1.65Kg",
-        image: "https://m.media-amazon.com/images/I/51QGlg5iRdL._SX679_.jpg",
-        link: "https://amzn.to/3PplKo1",
+          "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.69kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Intel Iris Xe Graphics, HD Camera, Backlit Keyboard, fy5009tu",
+        image:
+          "https://m.media-amazon.com/images/I/71p8u7Upw1L._SX679_.jpg",
+        link: "https://amzn.to/4gqIGyk",
       },
       {
         id: 4,
