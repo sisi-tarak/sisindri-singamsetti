@@ -15,11 +15,11 @@ const ResourcePage = () => {
 
         return (
           <div className="w-full min-h-screen bg-backgroundBgColor">
-            <Container maxWidth="xl" className="mt-8 px-2 sm:px-4 lg:px-8 mb-5">
+            <Container maxWidth="md" className="mt-8 px-2 sm:px-4 lg:px-8 mb-5">
               <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4 w-full">
-                <div className="block md:hidden xl:block md:w-[200px]  2xl:w-[300px] flex-shrink-0">
+                {/* <div className="block md:hidden xl:block md:w-[200px]  2xl:w-[300px] flex-shrink-0">
                   <div className="h-48 md:h-dvh w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
-                </div>
+                </div> */}
 
                 <div className="bg-footerBgColor flex-grow-0">
                   {resource ? (
@@ -137,9 +137,9 @@ const ResourcePage = () => {
                   )}
                 </div>
 
-                <div className="w-full md:w-[200px] 2xl:w-[300px] flex-shrink-0">
+                {/* <div className="w-full md:w-[200px] 2xl:w-[300px] flex-shrink-0">
                   <div className="h-48 md:h-dvh  w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
-                </div>
+                </div> */}
               </div>
             </Container>
           </div>
