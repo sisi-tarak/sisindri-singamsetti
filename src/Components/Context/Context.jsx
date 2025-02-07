@@ -159,7 +159,8 @@ export class Provider extends Component {
         subtitle: "Intel Core i5-1334U",
         description:
           "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.59kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Iris Xe Graphics, FHD Camera, Backlit KB, fd0316TU/fd0315TU",
-        image: "https://m.media-amazon.com/images/I/71J+OBadJCL._SX679_.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71J+OBadJCL._SX679_.jpg",
         link: "https://amzn.to/3CCEXjq",
       },
       {
@@ -168,7 +169,8 @@ export class Provider extends Component {
         subtitle: "Intel Core i5 12450H",
         description:
           "14-inch(35.5cm) WUXGA+ IPS Laptop (16GB/512GB SSD/Win 11/Office 2021/Backlit KB/FHD Camera/Alexa/3 Month Game Pass/Cloud Grey/1.46Kg), 83BF000UIN",
-        image: "https://m.media-amazon.com/images/I/61UjxQh+aYL._SX679_.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61UjxQh+aYL._SX679_.jpg",
         link: "https://amzn.to/4jMEcoS",
       },
       {
@@ -177,7 +179,8 @@ export class Provider extends Component {
         subtitle: "Intel Core i5-1235U",
         description:
           "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.69kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Intel Iris Xe Graphics, HD Camera, Backlit Keyboard, fy5009tu",
-        image: "https://m.media-amazon.com/images/I/71p8u7Upw1L._SX679_.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71p8u7Upw1L._SX679_.jpg",
         link: "https://amzn.to/4gqIGyk",
       },
       {
@@ -186,7 +189,8 @@ export class Provider extends Component {
         subtitle: "Air Laptop with M2 chip",
         description:
           "13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Silver",
-        image: "https://m.media-amazon.com/images/I/71eXNIDUGjL._SX679_.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71eXNIDUGjL._SX679_.jpg",
         link: "https://amzn.to/3Q83WOw",
       },
       {
@@ -195,7 +199,8 @@ export class Provider extends Component {
         subtitle: "Liquid Retina Display, 64GB",
         description:
           "A14 Bionic chip, 27.69 cm (10.9″), Wi-Fi 6 + 5G Cellular, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue",
-        image: "https://m.media-amazon.com/images/I/61ToKShnQvL._SX679_.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61ToKShnQvL._SX679_.jpg",
         link: "https://www.amazon.in/Apple-iPad-10th-generation-cellular/dp/B0BJM15HHH?_encoding=UTF8&content-id=amzn1.sym.d8376102-5264-464e-a3b1-4b902e45e118&crid=CFMT7LQN0SU5&dib=eyJ2IjoiMSJ9.UFKuA84f7wJdCVPIdz0iSxD8Fb5CpXEivj4uRufe6tTheRCKDr2kFzX1vrK-SZBUPlNNBwZGMZsTvVcVc704EP_fDNPyx6ubFngdOVa37EQKEkDU7sSa6W1q1D3cWt2Y3TTrjXvFqH04cDTrViCcnpqdCA3sSZjWX-RXU4VDjEE26bU218S-PJur7lyeLnRjI3e7_VZZBq1M3r9TxtV-LX9gMlQqebNtU5D71f1BTYjMiY_kzpyaOK5xKPuDZ3kmBmSpv1evX1ibNqUn_fYb3qvLulQfjxqeeYR9ZYVe-jYxh-ixe6FYnLr4W13ktV-cC-0tuOuihLlxtc5BM9XxU2hLIJ_jgCZPDv9izxS5h3--t8f2pqhRB346sI-EDZiOyS57ncqfEja9KoSrziZowHdC0EEQ3wAPM7du1EPMGhPNNppCBxcRY-2bYSisDxlA._44-pLZ6YBxXR7NSzQ--sbTZXMg_h7K63YNbAhdnB1c&dib_tag=se&pd_rd_r=1055e7fe-7bfa-4297-906e-4573888db487&pd_rd_w=dcI6D&pd_rd_wg=UP5mz&pf_rd_p=d8376102-5264-464e-a3b1-4b902e45e118&pf_rd_r=FAGQ6H2NR686ACEWRA9Z&qid=1736178009&sprefix=b09g9cvml5%2Bb09g9qfdvk%2Bb09g9hgl5f%2Bb09g99dr3t%2Bb09g97gz8q%2Bb09g9cxkcq%2Bb09g9f65mg%2Bb09g942p11%2Bb0bjmsfmhh%2Bb0bjmgxlyz%2Bb0bjm3nbmt%2Bb0bjldvx2s%2Bb0bjmn3wxm%2Bb0bjldfnvl%2Bb0bjlf8k57%2Bb0bjlhp48c%2Bb0bjmqd4wb%2Bb0bjm15hhh%2Bb0bjlxqjb5%2Bb0bjljxpm3%2Bb0bjm1756s%2Bb0bjmc644t%2Bb0bjmfbv6x%2Bb0bjmk7ct2%2Bb09v471196%2Bb09v48635g%2Bb09v4bx76b%2Bb09v4fnfhn%2Bb09v4q2wd6%2Bb09v4d952h%2Bb09v4s643n%2Bb09v4k1s59%2Bb09v45f5mf%2Bb09v4s5vw1%2Bb09v4jw485%2Bb09v4qzn7t%2Bb09v4tsxwx%2Bb09v4tpqzv%2Bb09v4dbcf9%2Bb09v4mktv4%2Bb09v4h3nz5%2Bb09v4h7ywg%2Bb09v47ysfc%2Bb09v4qlb1p%2Bb09g93k5d5%2Bb09g9bx757%2Bb09g99fvlv%2Bb09g9g58kq%2Bb09g95jt9x%2Bb09g95j6qd%2Bb09g93ls13%2Bb09g9hn533%2Bb09g999sm2%2Bb09g9cjm37%2Bb09g95svwb%2Bb09g982gfs%2Bb09g9dxg76%2Bb09g9j9bw2%2Bb09g9g88gd%2Bb09g9cklrv%2Bb0bjlfbyv1%2Bb0bjmckycy%2Bb0bjmn52cs%2Bb0bjmn69wf%2Bb0bjm3n9n5%2Bb0bjldv263%2Bb0bjmgztq8%2Bb0bjmch7w9%2Bb0bjmcj7kl%2Bb0bjmc8mh8%2Bb0bjlgzjkh%2Bb0bjmcmczh%2Bb0bjlhdt5k%2Bb0bjlzv5c3%2Bb0bjmvhvj4%2Bb0bjlxm3yr%2Bb0bjm9yqx3%2Bb0bjlkv244%2Bb0bjlhhq3j%2Bb0bjlg3nb8%2Bb0bjmmhsgm%2Bb0bjmvhrn9%2Bb0bjlhfzlf%2Bb0bjljwyhd%2Bb0bjlf5z2x%2Bb0bjm3k67t%2Bb0bjm7t9vr%2Bb0bjlcy91r%2Bb0bjlgfvx1%2Bb0bjmq9xhg%2Bb0bjmn32y2%2Bb0bjmgg19r%2Bb0bjldzk7n%2Bb0bjm63df8%2Bb0bjmd4x36%2Bb0bjlgk18n%2Bb0bjm15q5x%2Bb0bjldrx6q%2Bb0bjlh667t%2Bb0bjmjc2m4%2Caps%2C532&sr=8-14&th=1&linkCode=sl1&tag=sisitarakk90b-21&linkId=98c290249a278808a3eb07379bf6b3bb&language=en_IN&ref_=as_li_ss_tl",
       },
       {
@@ -204,7 +209,8 @@ export class Provider extends Component {
         subtitle: "Ultra Retina XDR Display, 256GB",
         description:
           "Landscape 12MP Front Camera / 12MP Back Camera, LiDAR Scanner, Wi-Fi 6E, Face ID, All-Day Battery Life, Standard Glass — Space Black",
-        image: "https://m.media-amazon.com/images/I/7131GFmmnCL._SX679_.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/7131GFmmnCL._SX679_.jpg",
         link: "https://amzn.to/4j6UOXK",
       },
     ],
@@ -300,6 +306,7 @@ export class Provider extends Component {
         link: "",
       },
     ],
+
     roadmaps: [
       {
         id: 1,
@@ -313,11 +320,17 @@ export class Provider extends Component {
             { topic: "Basic tags and attributes" },
             { topic: "Semantic HTML" },
             { topic: "Forms and input types" },
-            { topic: "Accessibility", details: ["ARIA roles", "alt text"] },
+            {
+              topic: "Accessibility",
+              details: ["ARIA roles", "alt text"],
+            },
           ],
           css: [
             { topic: "Selectors and specificity" },
-            { topic: "Box model", details: ["Margin", "Padding", "Border"] },
+            {
+              topic: "Box model",
+              details: ["Margin", "Padding", "Border"],
+            },
             { topic: "Layout", details: ["Flexbox", "Grid"] },
             { topic: "Responsive design", details: ["Media queries"] },
             { topic: "Animations and transitions" },
@@ -336,14 +349,20 @@ export class Provider extends Component {
             },
           ],
           react: [
-            { topic: "Components", details: ["Functional", "Class-based"] },
+            {
+              topic: "Components",
+              details: ["Functional", "Class-based"],
+            },
             { topic: "Props and State" },
             {
               topic: "Hooks",
               details: ["useState", "useEffect", "useContext"],
             },
             { topic: "Routing", details: ["React Router"] },
-            { topic: "State Management", details: ["Context API", "Redux"] },
+            {
+              topic: "State Management",
+              details: ["Context API", "Redux"],
+            },
           ],
         },
         projects: {
@@ -378,8 +397,12 @@ export class Provider extends Component {
           },
           { tip: "Showcase your portfolio and explain your projects." },
           { tip: "Practice problem-solving and coding challenges." },
-          { tip: "Understand browser mechanics and performance optimization." },
-          { tip: "Ask about the company’s tech stack and team structure." },
+          {
+            tip: "Understand browser mechanics and performance optimization.",
+          },
+          {
+            tip: "Ask about the company’s tech stack and team structure.",
+          },
           {
             tip: "Be honest about what you don’t know and show willingness to learn.",
           },
@@ -444,7 +467,8 @@ export class Provider extends Component {
         id: 1,
         title: "Top 20 Java Leet Questions",
         slug: "java-leetcode-questions",
-        fullTitle: "Top 20 Java LeetCode Interview Questions & Solutions 🚀",
+        fullTitle:
+          "Top 20 Java LeetCode Interview Questions & Solutions 🚀",
         description:
           "Welcome to the Top 20 Java LeetCode Interview Questions! Whether you're prepping for coding interviews or looking to improve your problem-solving skills, this is a curated collection of the most essential LeetCode problems that you’ll encounter in interviews. Each problem is followed by a clear and efficient solution in Java, along with an explanation to ensure you understand the concepts behind it.",
         paragraphs: [],
@@ -1051,7 +1075,8 @@ public class Subsets {
         id: 2,
         title: "Top 20 Python Leet Questions",
         slug: "python-leetcode-questions",
-        fullTitle: "Top 20 Python LeetCode Interview Questions & Solutions 🚀",
+        fullTitle:
+          "Top 20 Python LeetCode Interview Questions & Solutions 🚀",
         description:
           "Welcome to the Top 20 Python LeetCode Interview Questions! Whether you're prepping for coding interviews or looking to improve your problem-solving skills, this is a curated collection of the most essential LeetCode problems that you’ll encounter in interviews. Each problem is followed by a clear and efficient solution in Python, along with an explanation to ensure you understand the concepts behind it.",
         paragraphs: [],
@@ -1535,6 +1560,291 @@ return result`,
           {
             text: "Practice Platform",
             link: "https://leetcode.com/problemset/",
+          },
+        ],
+      },
+
+      {
+        id: 3,
+        title: "React.js Interview Questions",
+        slug: "react-js-questions",
+        fullTitle: "Top React.js Interview Questions & Answers 🚀",
+        description:
+          "Welcome to the Top React.js Interview Questions! Whether you're preparing for a front-end developer interview or looking to strengthen your React knowledge, this is a curated collection of essential React.js questions. Each question is followed by a detailed explanation and code examples to help you understand the concepts thoroughly.",
+        paragraphs: [],
+        questions: [
+          {
+            id: 1,
+            title: "What is React?",
+            problem: "Explain what React is and its primary use cases.",
+            code: "",
+            explanation:
+              "React (aka React.js or ReactJS) is an open-source front-end JavaScript library used for building composable user interfaces, especially for single-page applications. It is used for handling the view layer for web and mobile apps based on components in a declarative approach. React was created by Jordan Walke, a software engineer at Facebook, and was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.",
+          },
+          {
+            id: 2,
+            title: "What is JSX in React?",
+            problem: "What is JSX, and how is it used in React?",
+            code: `import React from 'react';
+      import ReactDOM from 'react-dom';
+      
+      const App = () => {
+          return (
+              <div>
+                  <h1>Hello, World!</h1>
+                  <p>This is a JSX example.</p>
+              </div>
+          );
+      };
+      
+      ReactDOM.render(<App />, document.getElementById('root'));`,
+            explanation:
+              "JSX (JavaScript XML) is a syntax extension for JavaScript used in React to describe the structure of UI components. It allows developers to write HTML-like code directly in JavaScript. JSX is compiled into regular JavaScript functions by tools like Babel before being executed by the browser.",
+          },
+          {
+            id: 3,
+            title: "What are state and props in React?",
+            problem:
+              "Explain the difference between state and props in React.",
+            code: "",
+            explanation:
+              "State is an internal data storage mechanism in React components, managed by React itself. Props (short for properties) are read-only data passed from parent to child components. The main difference is that state is mutable and controlled by the component itself, whereas props are immutable and controlled by the parent component.",
+          },
+          {
+            id: 4,
+            title: "What is the significance of keys in React lists?",
+            problem: "Why are keys important in React lists?",
+            code: `const ListComponent = () => {
+          const items = ['apple', 'banana', 'cherry'];
+      
+          return (
+              <ul>
+                  {items.map((item, index) => (
+                      <li key={index}>{item}</li>
+                  ))}
+              </ul>
+          );
+      };`,
+            explanation:
+              "Keys are special string attributes used by React to identify which items have changed, been added, or been removed in a list of elements. Keys help React efficiently update the UI by minimizing re-renders. Keys should be unique among siblings, but don't need to be globally unique.",
+          },
+          {
+            id: 5,
+            title: "Explain the component lifecycle methods in React",
+            problem:
+              "What are the lifecycle methods in React, and how are they used?",
+            code: "",
+            explanation:
+              "React components have several lifecycle methods that execute at different stages of a component's existence. These methods include `componentDidMount`, `componentDidUpdate`, `componentWillUnmount`, etc. They allow developers to hook into different points in a component's lifecycle to perform tasks like fetching data, updating the DOM, or cleaning up resources.",
+          },
+          {
+            id: 6,
+            title: "What is the significance of setState in React?",
+            problem: "How does `setState` work in React?",
+            code: `import React, { Component } from 'react';
+      
+      class Counter extends Component {
+          constructor(props) {
+              super(props);
+              this.state = {
+                  count: 0
+              };
+          }
+      
+          incrementCount = () => {
+              this.setState({ count: this.state.count + 1 });
+          };
+      
+          render() {
+              return (
+                  <div>
+                      <p>Count: {this.state.count}</p>
+                      <button onClick={this.incrementCount}>Increment</button>
+                  </div>
+              );
+          }
+      }
+      
+      export default Counter;`,
+            explanation:
+              "`setState()` is a method used to update the state of a React component. When `setState()` is called, React re-renders the component and its children. It can take an object as an argument to update state properties asynchronously, or a callback function to perform actions after the state has been updated.",
+          },
+          {
+            id: 7,
+            title:
+              "Explain the concept of higher-order components in React",
+            problem:
+              "What are higher-order components, and how are they used?",
+            code: "",
+            explanation:
+              "Higher-order components are functions that take a component and return a new component with enhanced functionality. They are a common pattern for code reuse, logic sharing, and cross-cutting concerns like authentication, logging, etc. HOCs allow you to abstract away common logic into reusable functions.",
+          },
+          {
+            id: 8,
+            title: "What are controlled components in React?",
+            problem:
+              "What are controlled components, and how do they work?",
+            code: `import React, { Component } from 'react';
+      
+      class ControlledComponent extends Component {
+          constructor(props) {
+              super(props);
+              this.state = {
+                  value: ''
+              };
+          }
+      
+          handleChange = (event) => {
+              this.setState({ value: event.target.value });
+          };
+      
+          render() {
+              return (
+                  <input
+                      type="text"
+                      value={this.state.value}
+                      onChange={this.handleChange}
+                  />
+              );
+          }
+      }
+      
+      export default ControlledComponent;`,
+            explanation:
+              "Controlled components are components whose form elements (like inputs, selects, and textareas) are controlled by React state. This means that the component renders a form element whose value is controlled by React, and React handles the value changes through state and event handlers.",
+          },
+          {
+            id: 9,
+            title:
+              "Explain the difference between functional components and class components in React",
+            problem:
+              "What are the differences between functional and class components?",
+            code: "",
+            explanation:
+              "Functional components are JavaScript functions that accept props and return React elements. They are simpler and more lightweight than class components, and they can use React hooks to manage state and lifecycle. Class components are ES6 classes that extend `React.Component` and have their own state and lifecycle methods.",
+          },
+          {
+            id: 10,
+            title: "What are React hooks?",
+            problem: "What are React hooks, and how are they used?",
+            code: `import { useState } from 'react';
+      
+      const useCounter = (initialCount) => {
+          const [count, setCount] = useState(initialCount);
+      
+          const increment = () => {
+              setCount(count + 1);
+          };
+      
+          return { count, increment };
+      };
+      
+      export default useCounter;`,
+            explanation:
+              "React hooks are functions that allow functional components to use state, lifecycle, and other React features without writing a class. Examples of hooks include `useState`, `useEffect`, `useContext`, etc. Custom hooks are functions that use hooks internally and allow you to reuse stateful logic between different components.",
+          },
+          {
+            id: 11,
+            title: "What are React Fragments?",
+            problem: "What are React Fragments, and why are they useful?",
+            code: "",
+            explanation:
+              "React Fragments allow you to group multiple children elements without adding extra nodes to the DOM. They are useful when you need to return multiple elements from a component's render method, but don't want to add unnecessary divs or spans. Fragments improve code readability and performance by reducing the number of DOM elements.",
+          },
+          {
+            id: 12,
+            title: "What are refs in React?",
+            problem: "What are refs, and how are they used in React?",
+            code: `import React, { useRef } from 'react';
+      
+      const RefExample = () => {
+          const inputRef = useRef(null);
+      
+          const focusInput = () => {
+              inputRef.current.focus();
+          };
+      
+          return (
+              <div>
+                  <input ref={inputRef} type="text" />
+                  <button onClick={focusInput}>Focus Input</button>
+              </div>
+          );
+      };
+      
+      export default RefExample;`,
+            explanation:
+              "Refs in React provide a way to access the underlying DOM nodes or React elements directly. They are primarily used for managing focus, integrating with third-party DOM libraries, or triggering imperative animations.",
+          },
+          {
+            id: 13,
+            title: "What is context in React?",
+            problem: "What is context, and how is it used in React?",
+            code: `import React, { createContext, useContext } from 'react';
+      
+      const ThemeContext = createContext('light');
+      
+      const ThemedComponent = () => {
+          const theme = useContext(ThemeContext);
+          return <p>Current Theme: {theme}</p>;
+      };
+      
+      const ContextExample = () => {
+          return (
+              <ThemeContext.Provider value="dark">
+                  <ThemedComponent />
+              </ThemeContext.Provider>
+          );
+      };
+      
+      export default ContextExample;`,
+            explanation:
+              "Context in React provides a way to pass data through the component tree without having to pass props manually at every level. It's primarily used when some data needs to be accessible by many components at different nesting levels.",
+          },
+          {
+            id: 14,
+            title: "Explain the concept of virtual DOM in React",
+            problem: "What is the virtual DOM, and how does it work?",
+            code: "",
+            explanation:
+              "The virtual DOM in React is a lightweight copy of the actual DOM maintained by React. When state or props change, React compares the virtual DOM with the previous version and computes the minimum number of DOM operations needed to update the actual DOM. This process makes React applications more efficient by minimizing DOM manipulation.",
+          },
+          {
+            id: 15,
+            title:
+              "What are the differences between useState and useReducer hooks in React?",
+            problem:
+              "What are the differences between `useState` and `useReducer`?",
+            code: `import React, { useReducer } from 'react';
+      
+      const initialState = { count: 0 };
+      
+      const reducer = (state, action) => {
+          switch (action.type) {
+              case 'increment':
+                  return { count: state.count + 1 };
+              case 'decrement':
+                  return { count: state.count - 1 };
+              default:
+                  return state;
+          }
+      };
+      
+      const ReducerExample = () => {
+          const [state, dispatch] = useReducer(reducer, initialState);
+      
+          return (
+              <div>
+                  Count: {state.count}
+                  <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>
+                  <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
+              </div>
+          );
+      };
+      
+      export default ReducerExample;`,
+            explanation:
+              "Both `useState` and `useReducer` hooks are used to manage state in functional components. The main difference is that `useState` is simpler and more suitable for managing independent state variables, while `useReducer` is more powerful and allows for complex state logic and actions.",
           },
         ],
       },
