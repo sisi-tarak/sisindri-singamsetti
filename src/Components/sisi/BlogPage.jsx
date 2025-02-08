@@ -87,11 +87,32 @@ const BlogPage = () => {
                     {blog.libraries && (
                       <div className=" ">
                         {blog.libraries.map((library, index) => (
-                          <section key={index} className="mb-12">
-                            <h2 className="text-lg md:text-xl font-semibold mt-8 text-textColor mb-6">
+                          <div key={index} className="mb-12">
+                            <Link
+                              to={library.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-lg md:text-xl font-semibold mt-8 text-textStrong"
+                            >
                               {library.name}
-                            </h2>
-                          </section>
+                            </Link>
+                            <div className="mt-3 px-1 sm:px-2 lg:px-4">
+                              <p className="font-semibold text-sm md:text-base">
+                                Description:
+                              </p>
+                              <p className="px-1 sm:px-2 md:px-6 pt-1 text-textColor/90 text-sm md:text-base">
+                                {library.description}
+                              </p>
+                            </div>
+                            <div className="mt-3 px-1 sm:px-2 lg:px-4">
+                              <p className="font-semibold text-sm md:text-base">
+                                Importance:
+                              </p>
+                              <p className="px-1 sm:px-2 md:px-6 pt-1 text-textColor/90 text-sm md:text-base">
+                                {library.importance}
+                              </p>
+                            </div>
+                          </div>
                         ))}
                       </div>
                     )}
@@ -114,8 +135,8 @@ const BlogPage = () => {
                       </div>
                     )}
 
-                    <div className="mt-12">
-                      <p className="my-8 text-textColor/80 text-sm md:text-base">
+                    <div className="">
+                      <p className="mb-8 text-textColor/80 text-sm md:text-base">
                         {blog.conclusion}
                       </p>
                     </div>
