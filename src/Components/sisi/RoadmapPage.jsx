@@ -168,7 +168,7 @@ const RoadmapPage = () => {
                         </div>
                       ))
                     ) : (
-                      <div className="flex flex-col justify-center items-center h-full">
+                      <div className="flex flex-col justify-center items-center text-center mx-auto h-full">
                         <h2 className="text-white tracking-widest font-medium text-5xl font-Montserrat">
                           Roadmap not found
                         </h2>

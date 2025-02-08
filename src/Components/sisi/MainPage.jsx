@@ -5,6 +5,7 @@ import { Consumer } from "../Context/Context";
 
 const Resources = lazy(() => import("./Resources"));
 const Roadmap = lazy(() => import("./Roadmap"));
+const Blogs = lazy(() => import("./Blogs"));
 const SocialHandlers = lazy(() => import("./SocialHandlers"));
 
 import sisiImg from "./assets/sisi.png";
@@ -94,6 +95,10 @@ const MainPage = () => {
 
                     <div id="resources" ref={sectionsRef.resources}>
                       <Resources />
+                    </div>
+
+                    <div id="blogs" ref={sectionsRef.blogs}>
+                      <Blogs />
                     </div>
                   </div>
                 </div>

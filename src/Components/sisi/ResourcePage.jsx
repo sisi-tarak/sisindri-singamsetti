@@ -21,8 +21,8 @@ const ResourcePage = () => {
                   <div className="h-48 md:h-dvh w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>
                 </div> */}
 
-                <div className="bg-footerBgColor flex-grow-0">
-                  {resource ? (
+                {resource ? (
+                  <div className="bg-footerBgColor flex-grow-0">
                     <div className="flex flex-col px-2 py-2 md:py-8 md:px-6">
                       <h2 className="font-Montserrat text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl tracking-wide font-semibold">
                         {resource.fullTitle}
@@ -86,11 +86,13 @@ const ResourcePage = () => {
                                   {question.problem}
                                 </p>
                               </div>
-                              <pre className="bg-strongBgColor/60 p-4 rounded mb-4 max-w-full  whitespace-pre-wrap overflow-x-auto">
-                                <code className="block overflow-x-auto text-xs sm:text-sm lg:text-base">
-                                  {question.code}
-                                </code>
-                              </pre>
+                              {question.code && (
+                                <pre className="bg-strongBgColor/60 p-4 rounded mb-4 max-w-full  whitespace-pre-wrap overflow-x-auto">
+                                  <code className="block overflow-x-auto text-xs sm:text-sm lg:text-base">
+                                    {question.code}
+                                  </code>
+                                </pre>
+                              )}
                               <div>
                                 <p className="font-semibold text-sm md:text-base">
                                   Explanation:
@@ -125,17 +127,17 @@ const ResourcePage = () => {
                           ))}
                       </div>
                     </div>
-                  ) : (
-                    <div className="flex flex-col justify-center items-center h-full">
-                      <h2 className="text-white tracking-widest font-medium text-5xl font-Montserrat">
-                        Resource not found
-                      </h2>
-                      <p className="mt-4 text-gray-400">
-                        The requested service does not exist.
-                      </p>
-                    </div>
-                  )}
-                </div>
+                  </div>
+                ) : (
+                  <div className="flex flex-col justify-center items-center text-center mx-auto h-full">
+                    <h2 className="text-white tracking-widest font-medium text-5xl font-Montserrat">
+                      Resource not found
+                    </h2>
+                    <p className="mt-4 text-gray-400">
+                      The requested service does not exist.
+                    </p>
+                  </div>
+                )}
 
                 {/* <div className="w-full md:w-[200px] 2xl:w-[300px] flex-shrink-0">
                   <div className="h-48 md:h-dvh  w-full bg-adsBgColor rounded-md shadow-lg transition-all duration-300 hover:shadow-xl"></div>

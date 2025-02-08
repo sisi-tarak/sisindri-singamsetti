@@ -159,8 +159,7 @@ export class Provider extends Component {
         subtitle: "Intel Core i5-1334U",
         description:
           "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.59kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Iris Xe Graphics, FHD Camera, Backlit KB, fd0316TU/fd0315TU",
-        image:
-          "https://m.media-amazon.com/images/I/71J+OBadJCL._SX679_.jpg",
+        image: "https://m.media-amazon.com/images/I/71J+OBadJCL._SX679_.jpg",
         link: "https://amzn.to/3CCEXjq",
       },
       {
@@ -169,8 +168,7 @@ export class Provider extends Component {
         subtitle: "Intel Core i5 12450H",
         description:
           "14-inch(35.5cm) WUXGA+ IPS Laptop (16GB/512GB SSD/Win 11/Office 2021/Backlit KB/FHD Camera/Alexa/3 Month Game Pass/Cloud Grey/1.46Kg), 83BF000UIN",
-        image:
-          "https://m.media-amazon.com/images/I/61UjxQh+aYL._SX679_.jpg",
+        image: "https://m.media-amazon.com/images/I/61UjxQh+aYL._SX679_.jpg",
         link: "https://amzn.to/4jMEcoS",
       },
       {
@@ -179,8 +177,7 @@ export class Provider extends Component {
         subtitle: "Intel Core i5-1235U",
         description:
           "16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.69kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Intel Iris Xe Graphics, HD Camera, Backlit Keyboard, fy5009tu",
-        image:
-          "https://m.media-amazon.com/images/I/71p8u7Upw1L._SX679_.jpg",
+        image: "https://m.media-amazon.com/images/I/71p8u7Upw1L._SX679_.jpg",
         link: "https://amzn.to/4gqIGyk",
       },
       {
@@ -189,8 +186,7 @@ export class Provider extends Component {
         subtitle: "Air Laptop with M2 chip",
         description:
           "13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Silver",
-        image:
-          "https://m.media-amazon.com/images/I/71eXNIDUGjL._SX679_.jpg",
+        image: "https://m.media-amazon.com/images/I/71eXNIDUGjL._SX679_.jpg",
         link: "https://amzn.to/3Q83WOw",
       },
       {
@@ -199,8 +195,7 @@ export class Provider extends Component {
         subtitle: "Liquid Retina Display, 64GB",
         description:
           "A14 Bionic chip, 27.69 cm (10.9″), Wi-Fi 6 + 5G Cellular, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue",
-        image:
-          "https://m.media-amazon.com/images/I/61ToKShnQvL._SX679_.jpg",
+        image: "https://m.media-amazon.com/images/I/61ToKShnQvL._SX679_.jpg",
         link: "https://www.amazon.in/Apple-iPad-10th-generation-cellular/dp/B0BJM15HHH?_encoding=UTF8&content-id=amzn1.sym.d8376102-5264-464e-a3b1-4b902e45e118&crid=CFMT7LQN0SU5&dib=eyJ2IjoiMSJ9.UFKuA84f7wJdCVPIdz0iSxD8Fb5CpXEivj4uRufe6tTheRCKDr2kFzX1vrK-SZBUPlNNBwZGMZsTvVcVc704EP_fDNPyx6ubFngdOVa37EQKEkDU7sSa6W1q1D3cWt2Y3TTrjXvFqH04cDTrViCcnpqdCA3sSZjWX-RXU4VDjEE26bU218S-PJur7lyeLnRjI3e7_VZZBq1M3r9TxtV-LX9gMlQqebNtU5D71f1BTYjMiY_kzpyaOK5xKPuDZ3kmBmSpv1evX1ibNqUn_fYb3qvLulQfjxqeeYR9ZYVe-jYxh-ixe6FYnLr4W13ktV-cC-0tuOuihLlxtc5BM9XxU2hLIJ_jgCZPDv9izxS5h3--t8f2pqhRB346sI-EDZiOyS57ncqfEja9KoSrziZowHdC0EEQ3wAPM7du1EPMGhPNNppCBxcRY-2bYSisDxlA._44-pLZ6YBxXR7NSzQ--sbTZXMg_h7K63YNbAhdnB1c&dib_tag=se&pd_rd_r=1055e7fe-7bfa-4297-906e-4573888db487&pd_rd_w=dcI6D&pd_rd_wg=UP5mz&pf_rd_p=d8376102-5264-464e-a3b1-4b902e45e118&pf_rd_r=FAGQ6H2NR686ACEWRA9Z&qid=1736178009&sprefix=b09g9cvml5%2Bb09g9qfdvk%2Bb09g9hgl5f%2Bb09g99dr3t%2Bb09g97gz8q%2Bb09g9cxkcq%2Bb09g9f65mg%2Bb09g942p11%2Bb0bjmsfmhh%2Bb0bjmgxlyz%2Bb0bjm3nbmt%2Bb0bjldvx2s%2Bb0bjmn3wxm%2Bb0bjldfnvl%2Bb0bjlf8k57%2Bb0bjlhp48c%2Bb0bjmqd4wb%2Bb0bjm15hhh%2Bb0bjlxqjb5%2Bb0bjljxpm3%2Bb0bjm1756s%2Bb0bjmc644t%2Bb0bjmfbv6x%2Bb0bjmk7ct2%2Bb09v471196%2Bb09v48635g%2Bb09v4bx76b%2Bb09v4fnfhn%2Bb09v4q2wd6%2Bb09v4d952h%2Bb09v4s643n%2Bb09v4k1s59%2Bb09v45f5mf%2Bb09v4s5vw1%2Bb09v4jw485%2Bb09v4qzn7t%2Bb09v4tsxwx%2Bb09v4tpqzv%2Bb09v4dbcf9%2Bb09v4mktv4%2Bb09v4h3nz5%2Bb09v4h7ywg%2Bb09v47ysfc%2Bb09v4qlb1p%2Bb09g93k5d5%2Bb09g9bx757%2Bb09g99fvlv%2Bb09g9g58kq%2Bb09g95jt9x%2Bb09g95j6qd%2Bb09g93ls13%2Bb09g9hn533%2Bb09g999sm2%2Bb09g9cjm37%2Bb09g95svwb%2Bb09g982gfs%2Bb09g9dxg76%2Bb09g9j9bw2%2Bb09g9g88gd%2Bb09g9cklrv%2Bb0bjlfbyv1%2Bb0bjmckycy%2Bb0bjmn52cs%2Bb0bjmn69wf%2Bb0bjm3n9n5%2Bb0bjldv263%2Bb0bjmgztq8%2Bb0bjmch7w9%2Bb0bjmcj7kl%2Bb0bjmc8mh8%2Bb0bjlgzjkh%2Bb0bjmcmczh%2Bb0bjlhdt5k%2Bb0bjlzv5c3%2Bb0bjmvhvj4%2Bb0bjlxm3yr%2Bb0bjm9yqx3%2Bb0bjlkv244%2Bb0bjlhhq3j%2Bb0bjlg3nb8%2Bb0bjmmhsgm%2Bb0bjmvhrn9%2Bb0bjlhfzlf%2Bb0bjljwyhd%2Bb0bjlf5z2x%2Bb0bjm3k67t%2Bb0bjm7t9vr%2Bb0bjlcy91r%2Bb0bjlgfvx1%2Bb0bjmq9xhg%2Bb0bjmn32y2%2Bb0bjmgg19r%2Bb0bjldzk7n%2Bb0bjm63df8%2Bb0bjmd4x36%2Bb0bjlgk18n%2Bb0bjm15q5x%2Bb0bjldrx6q%2Bb0bjlh667t%2Bb0bjmjc2m4%2Caps%2C532&sr=8-14&th=1&linkCode=sl1&tag=sisitarakk90b-21&linkId=98c290249a278808a3eb07379bf6b3bb&language=en_IN&ref_=as_li_ss_tl",
       },
       {
@@ -209,8 +204,7 @@ export class Provider extends Component {
         subtitle: "Ultra Retina XDR Display, 256GB",
         description:
           "Landscape 12MP Front Camera / 12MP Back Camera, LiDAR Scanner, Wi-Fi 6E, Face ID, All-Day Battery Life, Standard Glass — Space Black",
-        image:
-          "https://m.media-amazon.com/images/I/7131GFmmnCL._SX679_.jpg",
+        image: "https://m.media-amazon.com/images/I/7131GFmmnCL._SX679_.jpg",
         link: "https://amzn.to/4j6UOXK",
       },
     ],
@@ -467,8 +461,7 @@ export class Provider extends Component {
         id: 1,
         title: "Top 20 Java Leet Questions",
         slug: "java-leetcode-questions",
-        fullTitle:
-          "Top 20 Java LeetCode Interview Questions & Solutions 🚀",
+        fullTitle: "Top 20 Java LeetCode Interview Questions & Solutions 🚀",
         description:
           "Welcome to the Top 20 Java LeetCode Interview Questions! Whether you're prepping for coding interviews or looking to improve your problem-solving skills, this is a curated collection of the most essential LeetCode problems that you’ll encounter in interviews. Each problem is followed by a clear and efficient solution in Java, along with an explanation to ensure you understand the concepts behind it.",
         paragraphs: [],
@@ -1075,8 +1068,7 @@ public class Subsets {
         id: 2,
         title: "Top 20 Python Leet Questions",
         slug: "python-leetcode-questions",
-        fullTitle:
-          "Top 20 Python LeetCode Interview Questions & Solutions 🚀",
+        fullTitle: "Top 20 Python LeetCode Interview Questions & Solutions 🚀",
         description:
           "Welcome to the Top 20 Python LeetCode Interview Questions! Whether you're prepping for coding interviews or looking to improve your problem-solving skills, this is a curated collection of the most essential LeetCode problems that you’ll encounter in interviews. Each problem is followed by a clear and efficient solution in Python, along with an explanation to ensure you understand the concepts behind it.",
         paragraphs: [],
@@ -1566,9 +1558,9 @@ return result`,
 
       {
         id: 3,
-        title: "React.js Interview Questions",
+        title: "ReactJS Interview Questions",
         slug: "react-js-questions",
-        fullTitle: "Top React.js Interview Questions & Answers 🚀",
+        fullTitle: "Top ReactJS Interview Questions & Answers 🚀",
         description:
           "Welcome to the Top React.js Interview Questions! Whether you're preparing for a front-end developer interview or looking to strengthen your React knowledge, this is a curated collection of essential React.js questions. Each question is followed by a detailed explanation and code examples to help you understand the concepts thoroughly.",
         paragraphs: [],
@@ -1604,8 +1596,7 @@ return result`,
           {
             id: 3,
             title: "What are state and props in React?",
-            problem:
-              "Explain the difference between state and props in React.",
+            problem: "Explain the difference between state and props in React.",
             code: "",
             explanation:
               "State is an internal data storage mechanism in React components, managed by React itself. Props (short for properties) are read-only data passed from parent to child components. The main difference is that state is mutable and controlled by the component itself, whereas props are immutable and controlled by the parent component.",
@@ -1671,10 +1662,8 @@ return result`,
           },
           {
             id: 7,
-            title:
-              "Explain the concept of higher-order components in React",
-            problem:
-              "What are higher-order components, and how are they used?",
+            title: "Explain the concept of higher-order components in React",
+            problem: "What are higher-order components, and how are they used?",
             code: "",
             explanation:
               "Higher-order components are functions that take a component and return a new component with enhanced functionality. They are a common pattern for code reuse, logic sharing, and cross-cutting concerns like authentication, logging, etc. HOCs allow you to abstract away common logic into reusable functions.",
@@ -1682,8 +1671,7 @@ return result`,
           {
             id: 8,
             title: "What are controlled components in React?",
-            problem:
-              "What are controlled components, and how do they work?",
+            problem: "What are controlled components, and how do they work?",
             code: `import React, { Component } from 'react';
       
       class ControlledComponent extends Component {
@@ -1846,6 +1834,531 @@ return result`,
             explanation:
               "Both `useState` and `useReducer` hooks are used to manage state in functional components. The main difference is that `useState` is simpler and more suitable for managing independent state variables, while `useReducer` is more powerful and allows for complex state logic and actions.",
           },
+          {
+            id: 16,
+            title: "What are keys and why are they important in React lists?",
+            problem: "Why are keys important when rendering lists in React?",
+            code: `const ListComponent = () => {
+        const items = ['apple', 'banana', 'cherry'];
+    
+        return (
+            <ul>
+                {items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        );
+    };`,
+            explanation:
+              "Keys are special attributes used by React to identify which items have changed, been added, or been removed in a list of elements. They help React efficiently update the UI by minimizing re-renders and ensuring that elements are re-used properly. Keys should be unique among siblings, but don't need to be globally unique.",
+          },
+          {
+            id: 17,
+            title: "What is the significance of React Fragments?",
+            problem: "What are React Fragments, and why are they useful?",
+            code: `import React from 'react';
+    
+    const FragmentExample = () => {
+        return (
+            <>
+                <h1>Hello, World!</h1>
+                <p>This is a React Fragment example.</p>
+            </>
+        );
+    };
+    
+    export default FragmentExample;`,
+            explanation:
+              "React Fragments allow you to group multiple children elements without adding extra nodes to the DOM. They are useful when you need to return multiple elements from a component's render method, but don't want to add unnecessary divs or spans. Fragments improve code readability and performance by reducing the number of DOM elements.",
+          },
+          {
+            id: 18,
+            title: "What is the purpose of useEffect in React?",
+            problem: "What is `useEffect`, and how is it used in React?",
+            code: `import React, { useState, useEffect } from 'react';
+    
+    const EffectExample = () => {
+        const [count, setCount] = useState(0);
+    
+        useEffect(() => {
+            document.title = \`Count: \${count}\`;
+        }, [count]);
+    
+        return (
+            <div>
+                <p>Count: {count}</p>
+                <button onClick={() => setCount(count + 1)}>Increment</button>
+            </div>
+        );
+    };
+    
+    export default EffectExample;`,
+            explanation:
+              "`useEffect` is a React hook used to perform side effects in functional components. It can be used for tasks like fetching data, updating the DOM, or subscribing to events. The second argument to `useEffect` is an array of dependencies that determine when the effect should run. If the array is empty, the effect runs only once after the initial render.",
+          },
+          {
+            id: 19,
+            title: "What is prop drilling in React?",
+            problem: "What is prop drilling, and how can it be avoided?",
+            code: "",
+            explanation:
+              "Prop drilling is the process of passing data through multiple layers of components via props, even if some intermediate components don't need the data. This can make the code harder to maintain. Prop drilling can be avoided by using React Context or state management libraries like Redux or Zustand.",
+          },
+          {
+            id: 20,
+            title: "What is the difference between React.memo and useMemo?",
+            problem:
+              "What are the differences between `React.memo` and `useMemo`?",
+            code: `import React, { useMemo } from 'react';
+    
+    const MemoExample = ({ items }) => {
+        const total = useMemo(() => {
+            return items.reduce((acc, item) => acc + item.price, 0);
+        }, [items]);
+    
+        return <p>Total: {total}</p>;
+    };
+    
+    export default React.memo(MemoExample);`,
+            explanation:
+              "`React.memo` is a higher-order component used to memoize functional components, preventing unnecessary re-renders when props haven't changed. `useMemo` is a hook used to memoize values, preventing expensive calculations from being recomputed on every render. Both are used for performance optimization, but they serve different purposes.",
+          },
+          {
+            id: 21,
+            title: "What is React Router?",
+            problem: "What is React Router, and how is it used?",
+            code: `import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+    
+    const App = () => {
+        return (
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                </Switch>
+            </Router>
+        );
+    };
+    
+    export default App;`,
+            explanation:
+              "React Router is a library used for routing in React applications. It allows you to define routes and map them to components, enabling navigation between different views in a single-page application. React Router provides components like `BrowserRouter`, `Route`, `Switch`, and `Link` to manage routing.",
+          },
+          {
+            id: 22,
+            title:
+              "What is the difference between element and component in React Router v6?",
+            problem:
+              "What is the difference between `element` and `component` in React Router v6?",
+            code: `import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+    
+    const App = () => {
+        return (
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </Router>
+        );
+    };
+    
+    export default App;`,
+            explanation:
+              "In React Router v6, the `component` prop has been replaced with the `element` prop. The `element` prop allows you to pass a React element directly, making it more flexible and consistent with React's declarative approach. This change simplifies the API and aligns with modern React practices.",
+          },
+          {
+            id: 23,
+            title: "What is lazy loading in React?",
+            problem:
+              "What is lazy loading, and how is it implemented in React?",
+            code: `import React, { Suspense, lazy } from 'react';
+    
+    const LazyComponent = lazy(() => import('./LazyComponent'));
+    
+    const App = () => {
+        return (
+            <Suspense fallback={<div>Loading...</div>}>
+                <LazyComponent />
+            </Suspense>
+        );
+    };
+    
+    export default App;`,
+            explanation:
+              "Lazy loading is a technique used to defer the loading of components until they are needed. In React, lazy loading is implemented using the `lazy` function and `Suspense` component. The `lazy` function dynamically imports a component, and `Suspense` provides a fallback UI while the component is being loaded.",
+          },
+          {
+            id: 24,
+            title: "What is error boundary in React?",
+            problem:
+              "What are error boundaries, and how are they used in React?",
+            code: `import React, { Component } from 'react';
+    
+    class ErrorBoundary extends Component {
+        constructor(props) {
+            super(props);
+            this.state = { hasError: false };
+        }
+    
+        static getDerivedStateFromError(error) {
+            return { hasError: true };
+        }
+    
+        componentDidCatch(error, errorInfo) {
+            console.error('Error:', error, errorInfo);
+        }
+    
+        render() {
+            if (this.state.hasError) {
+                return <h1>Something went wrong.</h1>;
+            }
+            return this.props.children;
+        }
+    }
+    
+    export default ErrorBoundary;`,
+            explanation:
+              "Error boundaries are React components that catch JavaScript errors in their child component tree, log those errors, and display a fallback UI instead of crashing the entire application. Error boundaries are implemented using the `getDerivedStateFromError` and `componentDidCatch` lifecycle methods.",
+          },
+          {
+            id: 25,
+            title: "What is Redux, and how does it work with React?",
+            problem: "What is Redux, and how is it used in React applications?",
+            code: `import { createStore } from 'redux';
+    import { Provider, useSelector, useDispatch } from 'react-redux';
+    
+    const initialState = { count: 0 };
+    
+    const reducer = (state = initialState, action) => {
+        switch (action.type) {
+            case 'INCREMENT':
+                return { count: state.count + 1 };
+            case 'DECREMENT':
+                return { count: state.count - 1 };
+            default:
+                return state;
+        }
+    };
+    
+    const store = createStore(reducer);
+    
+    const Counter = () => {
+        const count = useSelector((state) => state.count);
+        const dispatch = useDispatch();
+    
+        return (
+            <div>
+                <p>Count: {count}</p>
+                <button onClick={() => dispatch({ type: 'INCREMENT' })}>Increment</button>
+                <button onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement</button>
+            </div>
+        );
+    };
+    
+    const App = () => {
+        return (
+            <Provider store={store}>
+                <Counter />
+            </Provider>
+        );
+    };
+    
+    export default App;`,
+            explanation:
+              "Redux is a state management library used to manage global state in React applications. It works by storing the entire application state in a single immutable object called the store. Components can access the store using hooks like `useSelector` and dispatch actions using `useDispatch`. Redux helps manage complex state logic and makes it easier to debug and test applications.",
+          },
+        ],
+        images: ["", ""],
+        buttonsSet2: [
+          {
+            text: "View Solutions",
+            link: "https://github.com/sisi-tarak/Top-20-LeetCode-Questions.git",
+          },
+          {
+            text: "Practice Platform",
+            link: "https://leetcode.com/problemset/",
+          },
+          {
+            text: "Youtube",
+            link: "https://youtube.com/@sisi-tarakk/",
+          },
+        ],
+        buttons: [
+          {
+            text: "View Solutions",
+            link: "https://github.com/sisi-tarak/Top-20-LeetCode-Questions.git",
+          },
+          {
+            text: "Practice Platform",
+            link: "https://leetcode.com/problemset/",
+          },
+        ],
+      },
+    ],
+
+    blogs: [
+      {
+        title: "Best Websites for Full-Stack Developers",
+        slug: "best-websites-for-full-stack-developers",
+        introduction:
+          "As a full-stack web developer, having access to the right resources can significantly enhance your skills and productivity. Here are some of the best websites that cater to various aspects of full-stack development.",
+        buttonsSet2: [
+          {
+            id: 1,
+            text: "Download",
+            src: "",
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Webistes",
+            link: "",
+          },
+          {
+            id: 3,
+            text: "Youtube",
+            link: "https://youtube.com/@sisi-tarakk/",
+          },
+        ],
+        buttons: [
+          {
+            id: 1,
+            text: "Download",
+            src: "",
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Webistes",
+            link: "",
+          },
+        ],
+        sections: [
+          {
+            title: "Learning & Resources",
+            websites: [
+              {
+                name: "freeCodeCamp.org",
+                url: "https://www.freecodecamp.org/",
+                description:
+                  "Free coding tutorials and certification programs. Comprehensive web development curriculum and a community-driven learning platform.",
+              },
+              {
+                name: "MDN Web Docs",
+                url: "https://developer.mozilla.org/",
+                description:
+                  "Authoritative web technology documentation. Comprehensive resources for developers, maintained by Mozilla and the web community.",
+              },
+            ],
+          },
+          {
+            title: "Coding Platforms",
+            websites: [
+              {
+                name: "LeetCode",
+                url: "https://leetcode.com/",
+                description:
+                  "Coding interview preparation with algorithm and data structure challenges. A technical interview practice platform.",
+              },
+              {
+                name: "HackerRank",
+                url: "https://www.hackerrank.com/",
+                description:
+                  "Coding challenges and skill assessments. Practice programming languages and prepare for technical recruitment.",
+              },
+            ],
+          },
+          {
+            title: "Documentation",
+            websites: [
+              {
+                name: "DevDocs.io",
+                url: "https://devdocs.io/",
+                description:
+                  "Unified documentation for multiple programming languages. Offline-capable documentation with a fast and clean interface.",
+              },
+              {
+                name: "StackOverflow",
+                url: "https://stackoverflow.com/",
+                description:
+                  "Community-driven programming Q&A. Extensive technical problem-solving resource with expert-level programming insights.",
+              },
+            ],
+          },
+          {
+            title: "Community & Networking",
+            websites: [
+              {
+                name: "Dev.to",
+                url: "https://dev.to/",
+                description:
+                  "Developer blogging platform for sharing technical articles and professional networking.",
+              },
+              {
+                name: "GitHub",
+                url: "https://github.com/",
+                description:
+                  "Code hosting and version control. Collaborate on open-source projects and showcase your portfolio.",
+              },
+            ],
+          },
+          {
+            title: "Tutorials & Courses",
+            websites: [
+              {
+                name: "Traversy Media",
+                url: "https://www.traversymedia.com/",
+                description:
+                  "High-quality web development tutorials available on YouTube and through paid courses. Practical coding instruction.",
+              },
+              {
+                name: "FreeCodeCamp YouTube",
+                url: "https://www.youtube.com/@freecodecamp",
+                description:
+                  "Free programming video tutorials covering comprehensive coding education and diverse technologies.",
+              },
+            ],
+          },
+          {
+            title: "Tools & Utilities",
+            websites: [
+              {
+                name: "CodePen",
+                url: "https://codepen.io/",
+                description:
+                  "Online code editor and sharing platform. A frontend development sandbox and interactive web development environment.",
+              },
+              {
+                name: "Carbon",
+                url: "https://carbon.now.sh/",
+                description:
+                  "Code screenshot generator for beautiful code sharing with customizable syntax highlighting.",
+              },
+            ],
+          },
+          {
+            title: "Design & Inspiration",
+            websites: [
+              {
+                name: "Dribbble",
+                url: "https://dribbble.com/",
+                description:
+                  "Design inspiration platform showcasing professional designs and creative portfolios.",
+              },
+            ],
+          },
+          {
+            title: "Performance & Testing",
+            websites: [
+              {
+                name: "GTmetrix",
+                url: "https://gtmetrix.com/",
+                description:
+                  "Website performance analysis tool providing speed and optimization insights. Comprehensive web performance testing.",
+              },
+            ],
+          },
+        ],
+        conclusion:
+          "These websites offer a wealth of resources, tools, and communities that can help you grow as a full-stack web developer. Whether you're looking to learn new skills, solve coding problems, or showcase your work, these platforms have got you covered.",
+      },
+      {
+        title: "6 Must-Have Frontend Libraries for Your Next Project",
+        slug: "must-have-frontend-libraries",
+        introduction:
+          "When building modern web applications, using the right frontend libraries can save you time, improve user experience, and make your code more efficient. Here are 6 essential frontend libraries that every developer should consider for their next project.",
+        buttonsSet2: [
+          {
+            id: 1,
+            text: "Download",
+            src: "",
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Webistes",
+            link: "",
+          },
+          {
+            id: 3,
+            text: "Youtube",
+            link: "https://youtube.com/@sisi-tarakk/",
+          },
+        ],
+        buttons: [
+          {
+            id: 1,
+            text: "Download",
+            src: "",
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Webistes",
+            link: "",
+          },
+        ],
+        libraries: [
+          {
+            name: "Animate On Scroll (AOS)",
+            description:
+              "AOS is a lightweight library that adds smooth animations to elements as they appear on the screen while scrolling. It’s perfect for creating engaging and interactive web pages.",
+            importance:
+              "Animations can make your website feel more dynamic and professional. AOS is easy to set up and works with just a single data attribute, making it a great choice for beginners and experts alike.",
+            link: "https://michalsnik.github.io/aos/",
+          },
+          {
+            name: "Chart.js",
+            description:
+              "Chart.js is a powerful library for creating beautiful and responsive charts. It supports various chart types like bar, line, pie, and more, making it ideal for data visualization.",
+            importance:
+              "Data visualization is crucial for displaying complex information in a simple and understandable way. Chart.js is beginner-friendly and highly customizable, making it a go-to tool for developers.",
+            link: "https://www.chartjs.org/",
+          },
+          {
+            name: "Luxon",
+            description:
+              "Luxon is a modern library for working with dates and times in JavaScript. It’s a more robust and lightweight alternative to Moment.js.",
+            importance:
+              "Handling dates and times can be tricky, especially when dealing with time zones or formatting. Luxon simplifies this process with a clean and intuitive API.",
+            link: "https://moment.github.io/luxon/",
+          },
+          {
+            name: "SweetAlert2",
+            description:
+              "SweetAlert2 is a library for creating beautiful, customizable alerts and modals. It replaces the default browser alerts with more user-friendly and visually appealing ones.",
+            importance:
+              "Alerts and modals are essential for user interaction, but the default browser alerts can feel outdated. SweetAlert2 enhances the user experience with modern designs and animations.",
+            link: "https://sweetalert2.github.io/",
+          },
+          {
+            name: "Floating UI (Popper.js)",
+            description:
+              "Floating UI (formerly Popper.js) is a library for positioning floating elements like tooltips, dropdowns, and popovers. It ensures these elements are dynamically placed and responsive.",
+            importance:
+              "Floating elements need to be positioned correctly to avoid overlapping or breaking the layout. Floating UI handles this automatically, saving you time and effort.",
+            link: "https://floating-ui.com/",
+          },
+          {
+            name: "FullCalendar",
+            description:
+              "FullCalendar is a feature-rich library for creating interactive calendars. It supports drag-and-drop events, resizing, and custom event handling.",
+            importance:
+              "Calendars are essential for scheduling applications, and FullCalendar makes it easy to build one with advanced features. It’s highly customizable and works well with frameworks like React and Vue.",
+            link: "https://fullcalendar.io/",
+          },
+        ],
+        conclusion:
+          "These libraries are not just tools—they are solutions to common frontend challenges. Whether you’re adding animations, visualizing data, handling dates, or creating interactive components, these libraries can help you build better, faster, and more user-friendly applications.",
+        exploreLinks: [
+          { name: "AOS Library", url: "https://michalsnik.github.io/aos/" },
+          { name: "Chart.js", url: "https://www.chartjs.org/" },
+          { name: "Luxon", url: "https://moment.github.io/luxon/" },
+          { name: "SweetAlert2", url: "https://sweetalert2.github.io/" },
+          { name: "Floating UI", url: "https://floating-ui.com/" },
+          { name: "FullCalendar", url: "https://fullcalendar.io/" },
         ],
       },
     ],

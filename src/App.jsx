@@ -8,6 +8,7 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import ResourcePage from "./Components/sisi/ResourcePage";
 import MainPage from "./Components/sisi/MainPage";
 import RoadmapPage from "./Components/sisi/RoadmapPage";
+import BlogPage from "./Components/sisi/BlogPage";
 
 const HomePage = lazy(() => import("./Components/HomePage/HomePage"));
 const About = lazy(() => import("./Components/About/About"));
@@ -71,6 +72,7 @@ const App = () => {
             <Route path="/sisi" element={<MainPage />} />
             <Route path="/sisi/roadmap/:slug" element={<RoadmapPage />} />
             <Route path="/sisi/resource/:slug" element={<ResourcePage />} />
+            <Route path="/sisi/blogs/:slug" element={<BlogPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
