@@ -5,7 +5,8 @@ import Project2 from "../../assets/Projects/02.png";
 import Project3 from "../../assets/Projects/03.png";
 import Project4 from "../../assets/Projects/04.png";
 
-import frontendRoadmap from "../../assets/Resources/Frontend-Roadmap-PDF.pdf";
+import frontendRoadmap from "../../assets/Resources/Frontend-Roadmap.pdf";
+import backendRoadmap from "../../assets/Resources/Backend- Roadmap.pdf";
 
 const Context = React.createContext();
 
@@ -304,7 +305,7 @@ export class Provider extends Component {
     roadmaps: [
       {
         id: 1,
-        title: "Front-end Roadmap",
+        title: "Frontend Roadmap",
         slug: "front-end-roadmap",
         description:
           "A clear step-by-step guide to becoming a front-end developer, including concepts, project ideas, and interview tips.",
@@ -432,7 +433,7 @@ export class Provider extends Component {
           {
             id: 2,
             text: "View Roadmap",
-            link: "https://github.com/sisi-tarak/frontend-roadmap.git",
+            link: "https://github.com/sisi-tarak/Roadmaps.git",
           },
           {
             id: 3,
@@ -450,7 +451,203 @@ export class Provider extends Component {
           {
             id: 2,
             text: "View Roadmap",
-            link: "https://github.com/sisi-tarak/frontend-roadmap.git",
+            link: "https://github.com/sisi-tarak/Roadmaps.git",
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Backend Roadmap",
+        slug: "backend-roadmap",
+        description:
+          "A structured guide to becoming a backend developer, covering programming languages, databases, APIs, security, deployment, and advanced topics.",
+
+        concepts: {
+          programmingLanguages: [
+            {
+              topic: "JavaScript (Node.js)",
+              details: ["Express.js framework", "Asynchronous programming"],
+            },
+            {
+              topic: "Python",
+              details: ["Django/Flask frameworks", "Ease of learning"],
+            },
+            {
+              topic: "Java",
+              details: ["Spring Boot framework", "Enterprise applications"],
+            },
+          ],
+          databases: [
+            {
+              topic: "SQL",
+              details: ["MySQL", "PostgreSQL", "Structured data storage"],
+            },
+            {
+              topic: "NoSQL",
+              details: ["MongoDB", "Firebase", "Flexible data storage"],
+            },
+          ],
+          apis: [
+            {
+              topic: "REST API",
+              details: ["Standard for web applications", "CRUD operations"],
+            },
+            {
+              topic: "GraphQL",
+              details: ["Flexible data retrieval", "Single endpoint"],
+            },
+            {
+              topic: "WebSockets",
+              details: ["Real-time communication", "Chat applications"],
+            },
+          ],
+          security: [
+            {
+              topic: "User Authentication",
+              details: ["JWT (JSON Web Tokens)", "OAuth"],
+            },
+            {
+              topic: "Password Hashing",
+              details: ["bcrypt", "Secure password storage"],
+            },
+            {
+              topic: "CORS",
+              details: ["Cross-Origin Resource Sharing", "API access control"],
+            },
+          ],
+          deployment: [
+            {
+              topic: "Hosting Services",
+              details: ["AWS", "Google Cloud", "DigitalOcean"],
+            },
+            {
+              topic: "CI/CD Pipelines",
+              details: ["Automated deployment", "GitHub Actions"],
+            },
+            {
+              topic: "Docker & Kubernetes",
+              details: ["Containerization", "Scalable applications"],
+            },
+          ],
+          advancedTopics: [
+            {
+              topic: "Caching",
+              details: ["Redis", "Memcached", "Faster data retrieval"],
+            },
+            {
+              topic: "Microservices Architecture",
+              details: ["Scalable systems", "Decoupled services"],
+            },
+            {
+              topic: "Message Queues",
+              details: ["RabbitMQ", "Kafka", "Handling large traffic"],
+            },
+          ],
+        },
+        projects: {
+          beginner: [
+            {
+              name: "User Authentication System",
+              stack: ["Node.js", "Express.js", "JWT"],
+            },
+            {
+              name: "Todo App",
+              stack: ["Express.js", "MongoDB", "CRUD operations"],
+            },
+            { name: "Weather API", stack: ["Node.js", "API integration"] },
+          ],
+          intermediate: [
+            {
+              name: "E-commerce Backend",
+              stack: ["Node.js", "MongoDB", "REST API"],
+            },
+            {
+              name: "Chat Application",
+              stack: ["WebSockets", "Node.js", "Real-time messaging"],
+            },
+            {
+              name: "URL Shortener",
+              stack: ["Node.js", "Express.js", "MongoDB"],
+            },
+          ],
+          advanced: [
+            {
+              name: "Job Portal",
+              stack: ["Node.js", "Microservices", "PostgreSQL"],
+            },
+            {
+              name: "AI-powered Blog",
+              stack: ["Python", "Django", "AI integration"],
+            },
+            {
+              name: "Microservices-based Application",
+              stack: ["Docker", "Kubernetes", "Node.js"],
+            },
+          ],
+        },
+        interviewTips: [
+          {
+            tip: "Understand APIs, databases, authentication, and cloud deployment.",
+          },
+          { tip: "Practice writing optimized SQL queries." },
+          { tip: "Explain REST API vs GraphQL and their use cases." },
+          { tip: "Describe how JWT authentication works." },
+          { tip: "Discuss caching and its benefits using tools like Redis." },
+          {
+            tip: "Be prepared to explain the difference between SQL and NoSQL databases.",
+          },
+        ],
+        finalTips: [
+          {
+            title: "Build Real Projects",
+            description:
+              "Apply your knowledge by building and deploying backend projects.",
+          },
+          {
+            title: "Contribute to Open Source",
+            description:
+              "Start with beginner-friendly repositories on GitHub to gain experience.",
+          },
+          {
+            title: "Practice Coding Challenges",
+            description:
+              "Use platforms like LeetCode, CodeChef, or HackerRank to improve problem-solving skills.",
+          },
+          {
+            title: "Stay Updated",
+            description:
+              "Follow backend development trends and tools through blogs, forums, and communities.",
+          },
+        ],
+        buttonsSet2: [
+          {
+            id: 1,
+            text: "Download Roadmap",
+            src: backendRoadmap,
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Roadmap",
+            link: "https://github.com/sisi-tarak/Roadmaps.git",
+          },
+          {
+            id: 3,
+            text: "Youtube",
+            link: "https://youtube.com/@sisi-tarakk/",
+          },
+        ],
+        buttons: [
+          {
+            id: 1,
+            text: "Download Roadmap",
+            src: backendRoadmap,
+            link: "",
+          },
+          {
+            id: 2,
+            text: "View Roadmap",
+            link: "https://github.com/sisi-tarak/Roadmaps.git",
           },
         ],
       },
